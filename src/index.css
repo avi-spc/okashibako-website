@@ -1,0 +1,1433 @@
+/* general */
+* {
+  font-family: "brandon grotesque";
+  margin: 0;
+  padding: 0;
+  color: #555353;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* navbar */
+.navbar-container {
+  background: rgb(255, 255, 255);
+
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.default-nav ul,
+.social-nav ul {
+  display: none;
+}
+
+.default-nav-links {
+  font-size: 19px;
+  margin-right: 22px;
+  text-decoration: none;
+}
+
+.social-nav-links {
+  margin-left: 22px;
+}
+
+.social-nav li img {
+  max-width: 20px;
+}
+
+.brand-logo {
+  margin: 0 10px;
+}
+
+.brand-logo-img {
+  max-width: 135px;
+}
+
+.selected {
+  font-family: "brandon grotesque black";
+}
+
+.hamburger-menu-img {
+  max-width: 52px;
+  margin-left: auto;
+  margin-right: 15px;
+}
+
+.mobile-nav {
+  position: absolute;
+  padding: 40px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #555353;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.mobile-nav-links {
+  display: inline-block;
+  font-size: 19px;
+  margin-left: 5px;
+  margin-top: 5px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.mobile-nav-cancel-img {
+  max-width: 52px;
+  margin-bottom: 25px;
+  padding: 0;
+}
+
+.mobile-social-nav ul {
+  margin-top: 30px;
+  display: flex;
+}
+
+.mobile-social-nav li img {
+  margin-right: 20px;
+  max-width: 25px;
+}
+
+.banner-img {
+  display: block;
+  /* justify-content: center; */
+  line-height: 0;
+  max-width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* work content */
+.compositions,
+.series,
+.comics {
+  font-family: "brandon grotesque black";
+}
+
+.work-container {
+  padding: 0 20px;
+  margin-bottom: 0px;
+}
+
+.work-tabs {
+  font-size: 19px;
+  padding: 32px 32px;
+}
+
+.work-tabs ul {
+  justify-content: center;
+  display: flex;
+  cursor: pointer;
+}
+
+.work-tabs div {
+  margin-right: 22px;
+}
+
+.work-tabs.work_tabs_no-padding {
+  padding-bottom: 15px;
+}
+
+/* series and comics heading */
+.individual-series-title,
+.individual-comics-title,
+.episode-series-title {
+  font-family: "brandon grotesque black";
+  font-size: 35px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/* series and comics project layout */
+.series-synopsis, .comics-synopsis {
+  font-size: 15px;
+}
+
+.episodes-heading, .extras-heading, .vignettes-heading {
+  font-family: "brandon grotesque black";
+  text-align: right;
+  font-size: 20px;
+  padding: 15px 0px;
+}
+
+  /* masonry */
+  .column-children {
+    margin-bottom: 22px;
+    border: solid;
+    border-width: thin;
+  }
+
+  .extras-img-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+/* gallery */
+.layout-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.gallery-tile-img {
+  width: 100%;
+}
+
+.gallery-tile {
+  position: relative;
+  line-height: 0;
+}
+
+.tile-overlay-container {
+  position: absolute;
+  transition: all 0.25s ease-out;
+  background: #fff;
+  border: solid;
+  border-width: 0;
+}
+
+.title-heading {
+  font-family: "brandon grotesque black";
+  font-size: 27px;
+  position: relative;
+  text-align: center;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.click-to-see {
+  font-size: 18px;
+  position: relative;
+  text-align: center;
+  opacity: 0;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tile-title {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.overlay-from-bottom {
+  width: 100%;
+  height: 0%;
+  bottom: 0;
+  left: 0;
+}
+
+.gallery-tile:hover .tile-overlay-container {
+  border-width: thin;
+}
+
+.gallery-tile:hover .title-heading {
+  opacity: 1;
+}
+
+.gallery-tile:hover .title-heading {
+  opacity: 1;
+}
+
+.gallery-tile:hover .overlay-from-bottom {
+  height: 100%;
+}
+
+.clickable-tile,
+.clickable-tile .tile-overlay-container {
+  cursor: pointer;
+}
+
+.individual-episode-container {
+  text-align: center;
+}
+
+.clickable-title {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.bordered-tiles {
+  border: solid;
+  border-width: thin;
+}
+
+/* episode-video */
+.episode-video {
+  position: relative;
+  padding-bottom: 56.25%;
+  line-height: 0;
+  border: solid;
+  border-width: thin;
+}
+
+.episode-video-frame {
+  position: absolute;
+  width: 100%;
+}
+
+.playing-info {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  padding: 10px 0px 20px 0px;
+}
+
+.button {
+  width: 15px;
+  height: 15px;
+  margin-right: 8px;
+
+}
+
+.playing-info img {
+  width: 100%;
+  height: 100%;
+}
+
+.playing-info-message {
+  font-family: "brandon grotesque black";
+}
+
+.episode-video-title {
+  margin-left: 10px;
+  font-size: 15px;
+}
+
+/* .episode-video-title {
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 0 0;
+} */
+
+.play-button {
+  display: flex;
+  justify-content: center;
+}
+
+.play-button img {
+  width: 80%;
+}
+
+/* footer */
+.footer-section {
+  background: #ededed;
+}
+
+.footer-container {
+  margin-top: 50px;
+  padding: 50px 32px;
+}
+
+.footer-container .social-nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-container .social-nav-links {
+  margin: 0 10px;
+}
+
+.copyright {
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+/* About Page ---------------- */
+
+.about-container {
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin: 10px 0 50px 0px;
+}
+
+.about-img {
+  line-height: 0;
+}
+
+.about-img img {
+  width: 100%;
+  border: solid;
+  border-width: thin;
+}
+
+.its-me-heading {
+  font-family: "brandon grotesque black";
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  background: #37383b;
+  /* border: solid;
+    border-width: thick; */
+}
+
+.about-content {
+  border: solid;
+  border-width: thin;
+  font-size: 16px;
+  background: #f4f4f4;
+}
+
+.about-content p {
+  padding: 20px;
+}
+
+/* Contact Page ---------------- */
+.contact-container {
+  padding: 0 20px;
+  margin-bottom: 50px;
+}
+
+.lets-get-creative-heading {
+  font-size: 40px;
+  padding: 10px 0 35px 0;
+  text-align: center;
+}
+
+.client-message {
+  display: block;
+  margin: 0 0 18px 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+.email-address {
+  font-family: "brandon grotesque black";
+  font-size: 25px;
+  text-align: center;
+  padding: 20px 0px;
+  background-color: #37383B;    
+  color: #fff;
+}
+
+.humour-message {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 18px;
+}
+
+label {
+  display: block;
+  margin: 0 0 12px 0;
+  font-size: 18px;
+}
+
+.name-label {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  font-size: 20px;
+  padding: 2px 15px;
+  margin-top: 4px;
+  border: solid;
+  border-width: thin;
+  background: #f4f4f4;
+  resize: none;
+}
+
+.message-box {
+  height: 160px;
+}
+
+.info-source-box {
+  height: 120px;
+}
+
+/* 
+  .first-name-box,
+  .last-name-box {
+    width: 100%;
+  } */
+
+input[type="submit"] {
+  font-size: 15px;
+  padding: 6px 15px;
+  margin: 10px 0 0 0;
+  text-align: center;
+  border: solid;
+  border-width: thin;
+  cursor: pointer;
+  background: #fff;
+  /* font-family: "brandon grotesque black"; */
+  transition: all 0.2s ease-out;
+}
+
+input[type="submit"]:hover {
+  background: #37383b;
+  color: #fff;
+}
+
+.name-lower-labels {
+  font-size: 10px;
+  margin-top: 2px;
+}
+
+/* cursor type handling */
+.unclickable-tile .title-heading,
+.individual-series-container .individual-series-title,
+.individual-comics-container .individual-comics-title {
+  cursor: default;
+}
+
+/* Scrollbar------------------------ */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@media only screen and (min-width: 800px) {
+  /* general */
+  * {
+    font-family: "brandon grotesque";
+    margin: 0;
+    padding: 0;
+    color: #555353;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  /* navbar */
+  .navbar-container {
+    background: rgb(255, 255, 255);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  .default-nav ul,
+  .social-nav ul {
+    display: flex;
+  }
+
+  .default-nav-links {
+    font-size: 19px;
+    margin-right: 22px;
+    text-decoration: none;
+  }
+
+  .social-nav-links {
+    margin-left: 22px;
+  }
+
+  .social-nav li img {
+    max-width: 20px;
+  }
+
+  .brand-logo {
+    margin: 0 50px;
+  }
+
+  .brand-logo-img {
+    max-width: 180px;
+  }
+
+  .selected {
+    font-family: "brandon grotesque black";
+  }
+
+  .hamburger-menu-img {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  .banner-img {
+    display: block;
+    /* justify-content: center; */
+    line-height: 0;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  /* work content */
+  .compositions,
+  .series,
+  .comics {
+    font-family: "brandon grotesque black";
+  }
+
+  .work-container {
+    padding: 0 32px;
+    margin-bottom: 0px;
+  }
+
+  .work-tabs {
+    font-size: 19px;
+    padding: 32px 32px;
+  }
+
+  .work-tabs ul {
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+  }
+
+  .work-tabs div {
+    margin-right: 22px;
+  }
+
+  .work-tabs.work_tabs_no-padding {
+    padding-bottom: 15px;
+  }
+
+  /* series and comics heading */
+  .individual-series-title,
+  .individual-comics-title,
+  .episode-series-title {
+    font-family: "brandon grotesque black";
+    font-size: 51px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  /* series and comics project layout */
+  .series-synopsis, .comics-synopsis {
+    font-size: 20px;
+  }
+
+  .episodes-heading, .extras-heading, .vignettes-heading {
+    font-family: "brandon grotesque black";
+    text-align: right;
+    font-size: 27px;
+    padding: 30px 0px;
+  }
+
+  /* masonry */
+  .column-children {
+    margin-bottom: 22px;
+    border: solid;
+    border-width: thin;
+  }
+
+  .extras-img-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* gallery */
+  .layout-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+  }
+
+  .gallery-tile-img {
+    width: 100%;
+  }
+
+  .gallery-tile {
+    position: relative;
+    line-height: 0;
+  }
+
+  .tile-overlay-container {
+    position: absolute;
+    transition: all 0.25s ease-out;
+    background: #fff;
+    border: solid;
+    border-width: 0;
+  }
+
+  .title-heading {
+    font-family: "brandon grotesque black";
+    font-size: 27px;
+    position: relative;
+    text-align: center;
+    opacity: 0;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .click-to-see {
+    font-size: 18px;
+    position: relative;
+    text-align: center;
+    opacity: 0;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .tile-title {
+    display: none;
+  }
+  .overlay-from-bottom {
+    width: 100%;
+    height: 0%;
+    bottom: 0;
+    left: 0;
+  }
+
+  .gallery-tile:hover .tile-overlay-container {
+    border-width: thin;
+  }
+
+  .gallery-tile:hover .title-heading {
+    opacity: 1;
+  }
+
+  .gallery-tile:hover .click-to-see {
+    opacity: 1;
+  }
+
+
+  .gallery-tile:hover .overlay-from-bottom {
+    height: 100%;
+  }
+
+  .clickable-tile,
+  .clickable-tile .tile-overlay-container {
+    cursor: pointer;
+  }
+
+  .episode-video-container {
+    text-align: left;
+    margin-bottom: 30px;
+  }
+
+  .clickable-title {
+    cursor: pointer;
+    display: inline-block;
+  }
+
+  .bordered-tiles {
+    border: solid;
+    border-width: thin;
+  }
+
+  /* episode-video */
+  .episode-video {
+    position: relative;
+    padding-bottom: 56.25%;
+    line-height: 0;
+    border: solid;
+    border-width: thin;
+  }
+
+  .episode-video-frame {
+    position: absolute;
+    width: 100%;
+  }
+
+  .playing-info {
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+    padding: 15px 0 0 0;
+  }
+
+  .button {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+
+  }
+
+  .playing-info img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .playing-info-message {
+    font-family: "brandon grotesque black";
+  }
+  
+  .episode-video-title {
+    margin-left: 10px;
+    font-size: 19px;
+  }
+
+  /* .episode-video-title {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 0 0;
+  } */
+
+  .play-button {
+    display: flex;
+    justify-content: center;
+  }
+
+  .play-button img {
+    width: 80%;
+  }
+
+  /* footer */
+  .footer-section {
+    background: #ededed;
+  }
+
+  .footer-container {
+    margin-top: 75px;
+    padding: 50px 240px;
+  }
+  
+  .footer-container .social-nav ul {
+    justify-content: center;
+  }
+
+  .footer-container .social-nav-links {
+    margin: 0 20px;
+  }
+
+  .copyright {
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  /* About Page ---------------- */
+
+  .about-container {
+    padding: 0 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin: 30px 0px 100px 0px;
+  }
+
+  .about-img {
+    line-height: 0;
+  }
+
+  .about-img img {
+    width: 100%;
+    border: solid;
+    border-width: thin;
+  }
+
+  .its-me-heading {
+    font-family: "brandon grotesque black";
+    color: #fff;
+    text-align: center;
+    font-size: 75px;
+    background: #37383b;
+    /* border: solid;
+    border-width: thick; */
+  }
+
+  .about-content {
+    border: solid;
+    border-width: thin;
+    font-size: 27px;
+    background: #f4f4f4;
+  }
+
+  .about-content p {
+    padding: 60px;
+  }
+
+  /* Contact Page ---------------- */
+  .contact-container {
+    padding: 0 120px;
+    margin-bottom: 75px;
+  }
+
+  .lets-get-creative-heading {
+    font-size: 60px;
+    padding: 45px 0 65px 0;
+    text-align: center;
+  }
+
+  .client-message {
+    display: block;
+    margin: 0 0 18px 0;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .email-address {
+    font-family: "brandon grotesque black";
+    font-size: 40px;
+    text-align: center;
+    padding: 20px 0px;
+    background-color: #37383B;    
+    color: #fff;
+  }
+
+  .humour-message {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 18px;
+  }
+
+  label {
+    display: block;
+    margin: 0 0 18px 0;
+    font-size: 24px;
+  }
+
+  .name-label {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  input[type="text"],
+  textarea {
+    width: 100%;
+    font-size: 20px;
+    padding: 8px 15px;
+    margin-top: 8px;
+    border: solid;
+    border-width: thin;
+    background: #f4f4f4;
+    resize: none;
+  }
+
+  .message-box {
+    height: 160px;
+  }
+
+  .info-source-box {
+    height: 120px;
+  }
+
+  /* 
+  .first-name-box,
+  .last-name-box {
+    width: 100%;
+  } */
+
+  input[type="submit"] {
+    font-size: 20px;
+    padding: 8px 30px;
+    margin: 10px 0 0 0;
+    text-align: center;
+    border: solid;
+    border-width: thin;
+    cursor: pointer;
+    background: #fff;
+    /* font-family: "brandon grotesque black"; */
+    transition: all 0.2s ease-out;
+  }
+
+  input[type="submit"]:hover {
+    background: #37383b;
+    color: #fff;
+  }
+
+  .name-lower-labels {
+    font-size: 14px;
+    margin-top: 2px;
+  }
+
+  /* cursor type handling */
+  .unclickable-tile .title-heading,
+  .individual-series-container .individual-series-title,
+  .individual-comics-container .individual-comics-title {
+    cursor: default;
+  }
+
+  /* Scrollbar------------------------ */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  /* general */
+  * {
+    font-family: "brandon grotesque";
+    margin: 0;
+    padding: 0;
+    color: #555353;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  /* navbar */
+  .navbar-container {
+    background: rgb(255, 255, 255);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  .default-nav ul,
+  .social-nav ul {
+    display: flex;
+  }
+
+  .default-nav-links {
+    font-size: 19px;
+    margin-right: 22px;
+    text-decoration: none;
+  }
+
+  .social-nav-links {
+    margin-left: 22px;
+  }
+
+  .social-nav li img {
+    max-width: 20px;
+  }
+
+  .brand-logo {
+    margin: 0 130px;
+  }
+
+  .brand-logo-img {
+    max-width: 205px;
+  }
+
+  .selected {
+    font-family: "brandon grotesque black";
+  }
+
+  .hamburger-menu-img {
+    display: none;
+  }
+
+  .banner-img {
+    display: block;
+    line-height: 0;
+    max-width: 100%;
+  }
+
+  /* work content */
+  .reel,
+  .compositions,
+  .series,
+  .comics {
+    font-family: "brandon grotesque black";
+  }
+
+  .work-container {
+    padding: 0 240px;
+    margin-bottom: 0px;
+  }
+
+  .work-tabs {
+    font-size: 19px;
+    padding: 32px 0px;    
+  }
+
+  .work-tabs ul {
+    justify-content: left;
+    display: flex;
+    cursor: pointer;
+  }
+
+  .decorations {
+    text-decoration: none;
+  }
+ 
+  .work-tabs div {
+    margin-right: 22px;
+  }
+
+  .work-tabs.work_tabs_no-padding {
+    padding-bottom: 15px;
+  }
+
+  /* series and comics heading */
+  .individual-series-title,
+  .individual-comics-title,
+  .episode-series-title {
+    font-family: "brandon grotesque black";
+    font-size: 51px;
+    text-align: left;
+    padding-bottom: 20px;
+  }
+
+  /* series and comics project layout */
+  .series-synopsis, .comics-synopsis {
+    font-size: 22px;
+  }
+
+  .episodes-heading, .extras-heading, .vignettes-heading {
+    font-family: "brandon grotesque black";
+    text-align: right;
+    font-size: 27px;
+    padding: 30px 0px;
+  }
+
+  /* masonry */
+  .column-children {
+    margin-bottom: 22px;
+    border: solid;
+    border-width: thin;
+  }
+
+  .extras-img-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* gallery */
+  .layout-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+  }
+
+  .gallery-tile-img {
+    width: 100%;
+  }
+
+  .gallery-tile {
+    position: relative;
+    line-height: 0;
+  }
+
+  .tile-overlay-container {
+    position: absolute;
+    transition: all 0.25s ease-out;
+    background: #fff;
+    border: solid;
+    border-width: 0;
+  }
+
+  .title-heading {
+    font-family: "brandon grotesque black";
+    font-size: 27px;
+    position: relative;
+    text-align: center;
+    opacity: 0;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .click-to-see {
+    font-size: 18px;
+    position: relative;
+    text-align: center;
+    opacity: 0;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .overlay-from-bottom {
+    width: 100%;
+    height: 0%;
+    bottom: 0;
+    left: 0;
+  }
+
+  .gallery-tile:hover .tile-overlay-container {
+    border-width: thin;
+  }
+
+  .gallery-tile:hover .title-heading {
+    opacity: 1;
+  }
+
+  .gallery-tile:hover .click-to-see {
+    opacity: 1;
+  }
+
+  .gallery-tile:hover .overlay-from-bottom {
+    height: 100%;
+  }
+
+  .clickable-tile,
+  .clickable-tile .tile-overlay-container {
+    cursor: pointer;
+  }
+
+  .episode-video-container {
+    text-align: left;
+    margin-bottom: 30px;
+  }
+
+  .clickable-title {
+    cursor: pointer;
+    display: inline-block;
+  }
+
+  .bordered-tiles {
+    border: solid;
+    border-width: thin;
+  }
+
+  /* episode-video */
+  .episode-video {
+    position: relative;
+    padding-bottom: 56.25%;
+    line-height: 0;
+    border: solid;
+    border-width: thin;
+  }
+
+  .episode-video-frame {
+    position: absolute;
+    width: 100%;
+  }
+
+  .playing-info {
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+    padding: 15px 0 0 0;
+  }
+
+  .button {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+
+  }
+
+  .playing-info img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .playing-info-message {
+    font-family: "brandon grotesque black";
+  }
+
+  .episode-video-title {
+    margin-left: 10px;
+    font-size: 19px;
+  }
+
+  .play-button {
+    display: flex;
+    justify-content: center;
+  }
+
+  .play-button img {
+    width: 80%;
+  }
+
+  /* footer */
+  .footer-img {
+    display: block;
+    line-height: 0;
+    max-width: 100%;
+  }
+
+  /* About Page ---------------- */
+
+  .about-container {
+    padding: 0 128px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 42px;
+    margin: 40px 0px 100px 0px;
+  }
+
+  .about-img {
+    line-height: 0;
+  }
+
+  .about-img img {
+    width: 100%;
+    border: solid;
+    border-width: thin;
+  }
+
+  .its-me-heading {
+    font-family: "brandon grotesque black";
+    color: #fff;
+    text-align: center;
+    font-size: 75px;
+    background: #37383b;
+    /* border: solid;
+    border-width: thick; */
+  }
+
+  .about-content {
+    border: solid;
+    border-width: thin;
+    font-size: 27px;
+    background: #f4f4f4;
+  }
+
+  .about-content p {
+    padding: 60px;
+  }
+
+  /* Contact Page ---------------- */
+  .contact-container {
+    padding: 0 240px;
+    margin-bottom: 75px;
+  }
+
+  .lets-get-creative-heading {
+    font-size: 76px;
+    padding: 45px 0 65px 0;
+    text-align: center;
+  }
+
+  .client-message {
+    display: block;
+    margin: 0 0 18px 0;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .email-address {
+    font-family: "brandon grotesque black";
+    font-size: 51px;
+    text-align: center;
+    padding: 30px 0 30px 0;
+    background-color: #37383B;    
+    color: #fff;
+  }
+
+  .humour-message {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 18px;
+  }
+  
+  label {
+    display: block;
+    margin: 0 0 18px 0;
+    font-size: 24px;
+  }
+
+  .name-label {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  input[type="text"],
+  textarea {
+    width: 100%;
+    font-size: 20px;
+    padding: 8px 15px;
+    margin-top: 8px;
+    border: solid;
+    border-width: thin;
+    background: #f4f4f4;
+    resize: none;
+  }
+
+  .message-box {
+    height: 160px;
+  }
+
+  .info-source-box {
+    height: 120px;
+  }
+
+  /* 
+  .first-name-box,
+  .last-name-box {
+    width: 100%;
+  } */
+
+  input[type="submit"] {
+    font-size: 20px;
+    padding: 8px 30px;
+    margin: 10px 0 0 0;
+    text-align: center;
+    border: solid;
+    border-width: thin;
+    cursor: pointer;
+    background: #fff;
+    /* font-family: "brandon grotesque black"; */
+    transition: all 0.2s ease-out;
+  }
+
+  input[type="submit"]:hover {
+    background: #37383b;
+    color: #fff;
+  }
+
+  .name-lower-labels {
+    font-size: 14px;
+    margin-top: 2px;
+  }
+
+  /* cursor type handling */
+  .unclickable-tile .title-heading,
+  .individual-series-container .individual-series-title,
+  .individual-comics-container .individual-comics-title {
+    cursor: default;
+  }
+
+  /* Scrollbar------------------------ */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
