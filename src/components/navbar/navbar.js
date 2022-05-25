@@ -17,7 +17,7 @@ const Navbar = () => {
         <nav className="navbar-section">
             <div className="navbar-container">
                 <DefaultNavLinks />
-                <Link to='/' className="brand-logo"><img src="/images/logo.png" alt="" className="brand-logo-img"/></Link>
+                <Link to='/' className="brand-logo"><img src="/images/logo.gif" alt="" className="brand-logo-img"/></Link>
                 <SocialNavLinks />
                 <img src="/images/hamburger-menu.png" className="hamburger-menu-img" alt="" onClick={() => showMobileNavbar()}/>
                 <NavbarContext.Provider value={[visibility, setVisibility]}>

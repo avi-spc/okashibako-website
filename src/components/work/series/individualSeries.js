@@ -6,6 +6,7 @@ import IndividualBanner from "../../banner/individualBanner";
 import IndividualEpisodeTile from "./individualEpisodeTile";
 import WorkTabs from "../workTabs";
 import IndividualEpisode from "./individualEpisode";
+import IndividualCollectioneTile from "./individualCollectionTile";
 
 const IndividualSeries = () => {
 
@@ -38,8 +39,7 @@ const IndividualSeries = () => {
     
     const { series } = dataStore;
     const seriesEpisodes = series[seriesTitle].seriesEpisodes;
-
-    const seriesExtras = series[seriesTitle].seriesExtras.extras;
+    const seriesProcess = series[seriesTitle].process;
 
     const [episodeTitle, setEpisodeTitle] = useState("");
 
@@ -58,22 +58,76 @@ const IndividualSeries = () => {
             <IndividualBanner bannerUrl={series[seriesTitle].bannerUrl} />
             <WorkTabs />
             <div className="work-container" ref={individualSeriesPage}>
-                <div className="individual-series-title">{seriesTitle.replace('-', ' ')}</div>
+                <div className="individual-series-title">{seriesTitle.replace(/-/g, ' ')}</div>
                 <div className="series-synopsis">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.            </div>
-                <div id="video-player" className="episodes-heading">episodes</div>               
-
-                {episodeTitle === "" ? null : <IndividualEpisode episodeTitle={episodeTitle} episodeVideoUrl={embeddedVideoUrl} episodeThumbnailUrl={videoThumbnailUrl} />}
-
-                <div className="layout-gallery">
-                    { seriesEpisodes && Object.entries(seriesEpisodes).map(([key, value]) => {
-                        return (
-                            <IndividualEpisodeTile serial={value} title={key} key={value.id} changeTitle={episodeTitle => setEpisodeTitle(episodeTitle)} />
-                        );
-                    })}
+                    {series[seriesTitle].description}
                 </div>
+                    {(() => 
+                        {
+                        if (series[seriesTitle].type === "series") {
+                            return (
+                                <div>
+                                    <div id="video-player" className="episodes-heading">episodes</div>               
+            
+                                    {episodeTitle === "" ? null : <IndividualEpisode episodeTitle={episodeTitle} episodeVideoUrl={embeddedVideoUrl} episodeThumbnailUrl={videoThumbnailUrl} />}
+            
+                                    <div className="layout-gallery">
+                                        { seriesEpisodes && Object.entries(seriesEpisodes).map(([key, value]) => {
+                                            return (
+                                                <IndividualEpisodeTile serial={value} title={key} key={value.id} changeTitle={episodeTitle => setEpisodeTitle(episodeTitle)} />
+                                            );
+                                        })}
+                                    </div>
+                                </div>
+                            )
+                        } else if (series[seriesTitle].type === "collection") {
+                            return (
+                                <div>
+                                    <div id="video-player" className="episodes-heading">collection</div>                           
+                                    <div className="layout-gallery">
+                                        { seriesEpisodes && Object.entries(seriesEpisodes).map(([key, value]) => {
+                                            return (
+                                                <IndividualCollectioneTile serial={value} title={key} key={value.id} changeTitle={episodeTitle => setEpisodeTitle(episodeTitle)} />
+                                            );
+                                        })}
+                                    </div>
+                                </div>
+                            )
+                        }
+                        else if (series[seriesTitle].type === "project") {
+                            return (
+                                <div style={{lineHeight: "0px"}}>
+                                    <div id="video-player" className="episodes-heading"></div>                           
+                                    <video muted autoplay="autoplay" loop width={"100%"} className="bordered-tiles">
+                                        <source src={series[seriesTitle].spotImageUrl} type="video/mp4" />
+                                        Sorry, your browser doesn't support embedded videos.
+                                    </video>                 
+                                </div>
+                            )
+                        }
+                        }
+                    )()}
+
+                    {(() => 
+                        {
+                        if (series[seriesTitle].process!=null) {
+                            return (
+                                <div>
+                                    <div className="extras-heading">process</div> 
+                                    { Object.entries(seriesProcess).map(([key, value]) => {
+                                        return (
+                                            <img src={seriesProcess[key]} alt="" width="100%" className="series-process bordered-tiles" />
+                                        );
+                                    })}                                    
+                                </div>
+                            )
+                        } else {
+                            return null;
+                        }
+                        }
+                    )()}               
                 
-                <div className="extras-heading">extras</div>               
+                {/* <div className="extras-heading">extras</div>                */}
                 {/* <IndividualSeriesMasonry columns={3} gap={25}>                   
                     { seriesExtras && Object.entries(seriesExtras).map(([key, value]) => {
                         const height = 200 + Math.ceil(Math.random() * 300);
@@ -85,7 +139,7 @@ const IndividualSeries = () => {
                         )
                     })}
                 </IndividualSeriesMasonry> */}
-                <img src={seriesExtras} alt="" width="100%" />
+                {/* <img src={seriesExtras} alt="" width="100%" /> */}
             </div>
         </div>            
     );

@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import dataStore from "../../../store/dataStore"
 import BannerContent from "../../banner/bannerContent";
-import ClickableWorkTile from "./seriesTile";
+import SeriesTile from "./seriesTile";
 import WorkTabs from "../workTabs";
 
 const Series = () => {
@@ -36,7 +36,7 @@ const Series = () => {
                 <div className="layout-gallery">
                     { series && Object.entries(series).map(([key, value]) => {
                     return (
-                        <ClickableWorkTile serial={value} title={key} key={value.id} />
+                        <SeriesTile serial={value} title={key} key={value.id} />
                     );
                     })}
                 </div>
