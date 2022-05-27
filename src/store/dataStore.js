@@ -86,9 +86,9 @@ const dataStore = {
       bannerUrl: "/images/work/series/oremo adventures/title banner.png",
       description: "Little blobs of mushiness bound to a profound friendship, well known in the town for making a lot of mischiefs. Oreo and Momo have been dispatched to this planet to spread smiles across faces.",
       process: [
-        "/images/work/series/she's watching/episodes/process/storyboard.png",
-        "/images/work/series/she's watching/episodes/process/storyboard.png",
-        "/images/work/series/she's watching/episodes/process/storyboard.png",
+        "/images/work/series/oremo adventures/episodes/process/series intro_storyboard.png",
+        "/images/work/series/oremo adventures/episodes/process/a little sweet, a little salty_storyboard.png",
+        "/images/work/series/oremo adventures/episodes/process/space mission_storyboard.png",
       ],
       seriesEpisodes: {
         "series intro": {
@@ -121,9 +121,9 @@ const dataStore = {
       bannerUrl: "/images/work/series/fluffycat/title banner.png",
       description: "Cute puckish munchkin, either found snacking on a piece of meat or chasing down some filthy rats. She may seem innocent, but she’s got a lot of lunacy up her sleeves.",
       process: [
-        "/images/work/series/she's watching/episodes/process/storyboard.png",
-        "/images/work/series/she's watching/episodes/process/storyboard.png",
-        "/images/work/series/she's watching/episodes/process/storyboard.png",
+        "/images/work/series/fluffycat/episodes/process/always hungry_storyboard.png",
+        "/images/work/series/fluffycat/episodes/process/humorous battle_storyboard.png",
+        "/images/work/series/fluffycat/episodes/process/roll, eat, fart, repeat_storyboard.png",
       ],
       seriesEpisodes: {
         "always hungry": {
