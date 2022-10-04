@@ -1,63 +1,60 @@
-import React, { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import { useParams } from "react-router-dom";
-import dataStore from "../../../store/dataStore"
-import IndividualBanner from "../../banner/individualBanner";
-import IndividualComicTile from "./individualComicTile";
-import WorkTabs from "../workTabs";
+import { useEffect, useRef, useContext } from 'react';
+import { useParams } from 'react-router-dom';
+import { gsap } from 'gsap';
+
+import { WorkContext } from '../../../contexts/workContext';
+
+import IndividualBanner from '../../banner/individualBanner';
+import IndividualComicTile from './individualComicTile';
+import WorkTabs from '../workTabs';
 
 const IndividualSeries = () => {
+	const individualComicsPage = useRef();
 
-    const individualComicsPage = useRef();
+	useEffect(() => {
+		window.scrollTo(0, 0);
 
-    useEffect(() => {
+		gsap.from(individualComicsPage.current, {
+			y: '5%',
+			duration: 0.5,
+			ease: 'Power2.easeOut'
+		});
 
-        window.scrollTo(0, 0);
+		gsap.to(individualComicsPage.current, {
+			opacity: '100%',
+			duration: 0.5,
+			ease: 'Power2.easeOut'
+		});
 
-        gsap.to(individualComicsPage.current, {
-            opacity: "100%",
-            duration: 0.5,
-            ease: "Power2.easeOut",
-          });
-  
-        gsap.from(individualComicsPage.current, {
-            y: '5%',
-            duration: .5,
-            ease: 'Power2.easeOut'
-        });
+		const work_tabs = document.querySelector('.work-tabs');
+		work_tabs.classList.add('work_tabs_no-padding');
 
-        const work_tabs = document.querySelector(".work-tabs");
-        work_tabs.classList.add("work_tabs_no-padding");
-        return () => {
-            work_tabs.classList.remove("work_tabs_no-padding");
-        };
-    }, []);
+		return () => {
+			work_tabs.classList.remove('work_tabs_no-padding');
+		};
+	}, []);
 
-    const { comicsTitle } = useParams();
-    
-    const { comics } = dataStore;
-    const comicCollection = comics[comicsTitle].comicCollection;    
-    
-    return(
-        <div>
-            <IndividualBanner bannerUrl={comics[comicsTitle].bannerUrl} />
-            <WorkTabs />
-            <div className="work-container" ref={individualComicsPage}>
-                <div className="individual-comics-title">{comicsTitle.replace('-', ' ')}</div>
-                <div className="comics-synopsis">
-                    {comics[comicsTitle].description}
-                </div>
-                <div className="vignettes-heading">vignettes</div>
-                <div className="layout-gallery">
-                { comicCollection && comicCollection.map(comicStrip => {
-                    return (
-                        <IndividualComicTile comicStrip={comicStrip} key={comicStrip.id} />
-                    );
-                })}
-                </div>
-            </div>
-        </div>            
-    );
-}
+	const { comicsTitle } = useParams();
+	const { comics } = useContext(WorkContext);
+
+	const individualComic = comics.find((comic) => comic.title === comicsTitle);
+
+	return (
+		<div>
+			<IndividualBanner bannerUrl={individualComic.bannerUrl} />
+			<WorkTabs />
+			<div className="work-container" ref={individualComicsPage}>
+				<div className="individual-comics-title">{comicsTitle.replace('-', ' ')}</div>
+				<div className="comics-synopsis">{individualComic.description}</div>
+				<div className="vignettes-heading">vignettes</div>
+				<div className="layout-gallery">
+					{individualComic.comicCollection.map((comicStrip) => {
+						return <IndividualComicTile comicStrip={comicStrip} key={comicStrip.id} />;
+					})}
+				</div>
+			</div>
+		</div>
+	);
+};
 
 export default IndividualSeries;
