@@ -1,48 +1,46 @@
-import React, { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import dataStore from "../../../store/dataStore"
-import BannerContent from "../../banner/bannerContent";
-import SeriesTile from "./seriesTile";
-import WorkTabs from "../workTabs";
+import { useEffect, useRef, useContext } from 'react';
+import { gsap } from 'gsap';
+
+import { WorkContext } from '../../../contexts/workContext';
+
+import BannerContent from '../../banner/bannerContent';
+import SeriesTile from './seriesTile';
+import WorkTabs from '../workTabs';
 
 const Series = () => {
+	const seriesPage = useRef();
 
-    const seriesPage = useRef();
+	useEffect(() => {
+		window.scrollTo(0, 600);
 
-    useEffect(() => {
+		gsap.from(seriesPage.current, {
+			y: '5%',
+			duration: 0.5,
+			ease: 'Power2.easeOut'
+		});
 
-        window.scrollTo(0, 600);
+		gsap.to(seriesPage.current, {
+			opacity: '100%',
+			duration: 0.5,
+			ease: 'Power2.easeOut'
+		});
+	});
 
-        gsap.to(seriesPage.current, {
-          opacity: "100%",
-          duration: 0.5,
-          ease: "Power2.easeOut",
-        });
+	const { series } = useContext(WorkContext);
 
-        gsap.from(seriesPage.current, {
-            y: '5%',
-            duration: .5,
-            ease: 'Power2.easeOut'
-          })
-      });
-    
-    const { series } = dataStore;
-    
-    return(
-        <div>
-            <BannerContent />
-            <WorkTabs />
-            <div className="work-container"  ref={seriesPage}>
-                <div className="layout-gallery">
-                    { series && Object.entries(series).map(([key, value]) => {
-                    return (
-                        <SeriesTile serial={value} title={key} key={value.id} />
-                    );
-                    })}
-                </div>
-            </div>
-        </div>            
-    );
-}
+	return (
+		<div>
+			<BannerContent />
+			<WorkTabs />
+			<div className="work-container" ref={seriesPage}>
+				<div className="layout-gallery">
+					{series.map((serial) => {
+						return <SeriesTile serial={serial} key={serial.id} />;
+					})}
+				</div>
+			</div>
+		</div>
+	);
+};
 
 export default Series;

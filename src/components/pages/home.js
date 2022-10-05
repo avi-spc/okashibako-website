@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
+
 import BannerContent from '../banner/bannerContent';
 import WorkTabs from '../work/workTabs';
 

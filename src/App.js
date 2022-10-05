@@ -1,4 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
+import WorkContextProvider from './contexts/workContext';
+
 import Navbar from './components/navbar/navbar';
 import Home from './components/pages/home';
 import About from './components/pages/about';
@@ -11,7 +14,6 @@ import Comics from './components/work/comics/comics';
 import IndividualSeries from './components/work/series/individualSeries';
 import IndividualComics from './components/work/comics/individualComics';
 import Reel from './components/work/reel/reel';
-import WorkContextProvider from './contexts/workContext';
 
 function App() {
 	return (
