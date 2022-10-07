@@ -11,7 +11,7 @@ const WorkTabs = () => {
 			duration: 0.5,
 			ease: 'Power2.easeOut'
 		});
-    
+
 		gsap.to(tabPanels.current, {
 			opacity: '100%',
 			duration: 0.5,
@@ -24,42 +24,22 @@ const WorkTabs = () => {
 			<div className="work-tabs">
 				<ul>
 					<li>
-						<NavLink
-							to="/"
-							className={({ isActive }) =>
-								'default-nav-links' + (isActive ? ' selected' : '')
-							}
-						>
+						<NavLink to="/" className="default-nav-links">
 							reel
 						</NavLink>
 					</li>
 					<li>
-						<NavLink
-							to="/compositions"
-							className={({ isActive }) =>
-								'default-nav-links' + (isActive ? ' selected' : '')
-							}
-						>
+						<NavLink to="/compositions" className="default-nav-links">
 							compositions
 						</NavLink>
 					</li>
 					<li>
-						<NavLink
-							to="/series"
-							className={({ isActive }) =>
-								'default-nav-links' + (isActive ? ' selected' : '')
-							}
-						>
+						<NavLink to="/series" className="default-nav-links">
 							series
 						</NavLink>
 					</li>
 					<li>
-						<NavLink
-							to="/comics"
-							className={({ isActive }) =>
-								'default-nav-links' + (isActive ? ' selected' : '')
-							}
-						>
+						<NavLink to="/comics" className="default-nav-links">
 							comics
 						</NavLink>
 					</li>

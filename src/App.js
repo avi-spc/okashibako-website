@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import WorkContextProvider from './contexts/workContext';
+import SocialContextProvider from './contexts/socialContext';
 
 import Navbar from './components/navbar/navbar';
 import Home from './components/pages/home';
@@ -19,20 +20,22 @@ function App() {
 	return (
 		<BrowserRouter>
 			<WorkContextProvider>
-				<div className="App">
-					<Navbar />
-					<Routes>
-						<Route path="/" element={((<Home />), (<Reel />))} />
-						<Route path="/compositions" element={<Compositions />} />
-						<Route path="/series" element={<Series />} />
-						<Route path="/series/:seriesTitle" element={<IndividualSeries />} />
-						<Route path="/comics" element={<Comics />} />
-						<Route path="/comics/:comicsTitle" element={<IndividualComics />} />
-						<Route path="/about" element={<About />} />
-						<Route path="/contact" element={<Contact />} />
-					</Routes>
-					<Footer />
-				</div>
+				<SocialContextProvider>
+					<div className="App">
+						<Navbar />
+						<Routes>
+							<Route path="/" element={((<Home />), (<Reel />))} />
+							<Route path="/compositions" element={<Compositions />} />
+							<Route path="/series" element={<Series />} />
+							<Route path="/series/:seriesTitle" element={<IndividualSeries />} />
+							<Route path="/comics" element={<Comics />} />
+							<Route path="/comics/:comicsTitle" element={<IndividualComics />} />
+							<Route path="/about" element={<About />} />
+							<Route path="/contact" element={<Contact />} />
+						</Routes>
+						<Footer />
+					</div>
+				</SocialContextProvider>
 			</WorkContextProvider>
 		</BrowserRouter>
 	);

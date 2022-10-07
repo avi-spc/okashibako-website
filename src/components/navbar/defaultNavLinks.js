@@ -1,22 +1,27 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink } from 'react-router-dom';
 
 const DefaultNavLinks = () => {
-  return (
-    <div className="default-nav">
-      <ul>
-        <li>
-          <NavLink  to="/" className={({isActive}) => "default-nav-links" + (isActive ?' selected' : '')}>home</NavLink>
-        </li>
-        <li>
-          <NavLink  to="/about" className={({isActive}) => "default-nav-links" + (isActive ?' selected' : '')}>about</NavLink>
-        </li>
-        <li>
-          <NavLink  to="/contact" className={({isActive}) => "default-nav-links" + (isActive ?' selected' : '')}>contact</NavLink>
-        </li>
-      </ul>
-    </div>
-  );
+	return (
+		<div className="default-nav">
+			<ul>
+				<li>
+					<NavLink to="/" className="default-nav-links">
+						home
+					</NavLink>
+				</li>
+				<li>
+					<NavLink to="/about" className="default-nav-links">
+						about
+					</NavLink>
+				</li>
+				<li>
+					<NavLink to="/contact" className="default-nav-links">
+						contact
+					</NavLink>
+				</li>
+			</ul>
+		</div>
+	);
 };
 
 export default DefaultNavLinks;

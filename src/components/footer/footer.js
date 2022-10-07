@@ -4,7 +4,7 @@ const Footer = () => {
 	return (
 		<nav className="footer-section">
 			<div className="footer-container">
-				<SocialNavLinks />
+				<SocialNavLinks classType="social-nav" colorMode="dark" />
 				<div className="copyright">&copy; creativekonami 2021</div>
 			</div>
 		</nav>
