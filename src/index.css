@@ -105,12 +105,6 @@ ul {
 }
 
 /* work content */
-.compositions,
-.series,
-.comics {
-  font-family: "brandon grotesque black";
-}
-
 .work-container {
   padding: 0 20px;
   margin-bottom: 0px;
@@ -159,19 +153,6 @@ ul {
 
 .series-process {
   margin-bottom: 8px;
-}
-
-/* masonry */
-.column-children {
-  margin-bottom: 22px;
-  border: solid;
-  border-width: thin;
-}
-
-.extras-img-wrapper img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 /* gallery */
@@ -239,10 +220,6 @@ ul {
   opacity: 1;
 }
 
-.gallery-tile:hover .title-heading {
-  opacity: 1;
-}
-
 .gallery-tile:hover .overlay-from-bottom {
   height: 100%;
 }
@@ -250,10 +227,6 @@ ul {
 .clickable-tile,
 .clickable-tile .tile-overlay-container {
   cursor: pointer;
-}
-
-.individual-episode-container {
-  text-align: center;
 }
 
 .clickable-title {
@@ -308,13 +281,6 @@ ul {
   font-size: 15px;
 }
 
-/* .episode-video-title {
-  font-size: 25px;
-  display: flex;
-  justify-content: center;
-  padding: 20px 0 0 0;
-} */
-
 .play-button {
   display: flex;
   justify-content: center;
@@ -348,8 +314,8 @@ ul {
   margin-top: 20px;
   text-align: center;
 }
-/* About Page ---------------- */
 
+/* About Page ---------------- */
 .about-container {
   padding: 0 20px;
   display: grid;
@@ -455,12 +421,6 @@ textarea {
   height: 120px;
 }
 
-/* 
-  .first-name-box,
-  .last-name-box {
-    width: 100%;
-  } */
-
 input[type="submit"] {
   font-size: 15px;
   padding: 6px 15px;
@@ -486,8 +446,8 @@ input[type="submit"]:hover {
 
 /* cursor type handling */
 .unclickable-tile .title-heading,
-.individual-series-container .individual-series-title,
-.individual-comics-container .individual-comics-title {
+.individual-series-title,
+.individual-comics-title {
   cursor: default;
 }
 
@@ -512,19 +472,6 @@ input[type="submit"]:hover {
 }
 
 @media only screen and (min-width: 800px) {
-  /* general */
-  * {
-    font-family: "brandon grotesque";
-    margin: 0;
-    padding: 0;
-    color: #555353;
-  }
-
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-
   /* navbar */
   .navbar-container {
     background: rgb(255, 255, 255);
@@ -540,16 +487,6 @@ input[type="submit"]:hover {
     display: flex;
   }
 
-  .default-nav-links {
-    font-size: 19px;
-    margin-right: 22px;
-    text-decoration: none;
-  }
-
-  .social-nav-links {
-    margin-left: 22px;
-  }
-
   .social-nav li img {
     max-width: 20px;
   }
@@ -562,10 +499,6 @@ input[type="submit"]:hover {
     max-width: 180px;
   }
 
-  .active {
-    font-family: "brandon grotesque black";
-  }
-
   .hamburger-menu-img {
     display: none;
   }
@@ -574,41 +507,10 @@ input[type="submit"]:hover {
     display: none;
   }
 
-  .banner-img {
-    display: block;
-    line-height: 0;
-    max-width: 100%;
-  }
-
   /* work content */
-  .compositions,
-  .series,
-  .comics {
-    font-family: "brandon grotesque black";
-  }
-
   .work-container {
     padding: 0 32px;
     margin-bottom: 0px;
-  }
-
-  .work-tabs {
-    font-size: 19px;
-    padding: 32px 32px;
-  }
-
-  .work-tabs ul {
-    justify-content: center;
-    display: flex;
-    cursor: pointer;
-  }
-
-  .work-tabs div {
-    margin-right: 22px;
-  }
-
-  .work-tabs.work_tabs_no-padding {
-    padding-bottom: 15px;
   }
 
   /* series and comics heading */
@@ -637,41 +539,11 @@ input[type="submit"]:hover {
     margin-bottom: 15px;
   }
 
-  /* masonry */
-  .column-children {
-    margin-bottom: 22px;
-    border: solid;
-    border-width: thin;
-  }
-
-  .extras-img-wrapper img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
   /* gallery */
   .layout-gallery {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 22px;
-  }
-
-  .gallery-tile-img {
-    width: 100%;
-  }
-
-  .gallery-tile {
-    position: relative;
-    line-height: 0;
-  }
-
-  .tile-overlay-container {
-    position: absolute;
-    transition: all 0.25s ease-out;
-    background: #fff;
-    border: solid;
-    border-width: 0;
   }
 
   .title-heading {
@@ -685,75 +557,17 @@ input[type="submit"]:hover {
     transform: translate(-50%, -50%);
   }
 
-  .click-to-see {
-    font-size: 18px;
-    position: relative;
-    text-align: center;
-    opacity: 0;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
   .tile-title {
     display: none;
-  }
-  .overlay-from-bottom {
-    width: 100%;
-    height: 0%;
-    bottom: 0;
-    left: 0;
-  }
-
-  .gallery-tile:hover .tile-overlay-container {
-    border-width: thin;
-  }
-
-  .gallery-tile:hover .title-heading {
-    opacity: 1;
   }
 
   .gallery-tile:hover .click-to-see {
     opacity: 1;
   }
 
-
-  .gallery-tile:hover .overlay-from-bottom {
-    height: 100%;
-  }
-
-  .clickable-tile,
-  .clickable-tile .tile-overlay-container {
-    cursor: pointer;
-  }
-
   .episode-video-container {
     text-align: left;
     margin-bottom: 30px;
-  }
-
-  .clickable-title {
-    cursor: pointer;
-    display: inline-block;
-  }
-
-  .bordered-tiles {
-    border: solid;
-    border-width: thin;
-  }
-
-  /* episode-video */
-  .episode-video {
-    position: relative;
-    padding-bottom: 56.25%;
-    line-height: 0;
-    border: solid;
-    border-width: thin;
-  }
-
-  .episode-video-frame {
-    position: absolute;
-    width: 100%;
   }
 
   .playing-info {
@@ -769,42 +583,13 @@ input[type="submit"]:hover {
     margin-right: 8px;
 
   }
-
-  .playing-info img {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .playing-info-message {
-    font-family: "brandon grotesque black";
-  }
   
   .episode-video-title {
     margin-left: 10px;
     font-size: 19px;
   }
 
-  /* .episode-video-title {
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
-    padding: 20px 0 0 0;
-  } */
-
-  .play-button {
-    display: flex;
-    justify-content: center;
-  }
-
-  .play-button img {
-    width: 80%;
-  }
-
   /* footer */
-  .footer-section {
-    background: #ededed;
-  }
-
   .footer-container {
     margin-top: 75px;
     padding: 50px 240px;
@@ -818,30 +603,13 @@ input[type="submit"]:hover {
     margin: 0 20px;
   }
 
-  .copyright {
-    font-size: 20px;
-    margin-top: 20px;
-    text-align: center;
-  }
-
   /* About Page ---------------- */
-
   .about-container {
     padding: 0 32px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 32px;
     margin: 30px 0px 100px 0px;
-  }
-
-  .about-img {
-    line-height: 0;
-  }
-
-  .about-img img {
-    width: 100%;
-    border: solid;
-    border-width: thin;
   }
 
   .its-me-heading {
@@ -893,22 +661,10 @@ input[type="submit"]:hover {
     color: #fff;
   }
 
-  .humour-message {
-    text-align: center;
-    font-size: 14px;
-    margin-top: 18px;
-  }
-
   label {
     display: block;
     margin: 0 0 18px 0;
     font-size: 24px;
-  }
-
-  .name-label {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
   }
 
   input[type="text"],
@@ -923,20 +679,6 @@ input[type="submit"]:hover {
     resize: none;
   }
 
-  .message-box {
-    height: 160px;
-  }
-
-  .info-source-box {
-    height: 120px;
-  }
-
-  /* 
-  .first-name-box,
-  .last-name-box {
-    width: 100%;
-  } */
-
   input[type="submit"] {
     font-size: 20px;
     padding: 8px 30px;
@@ -950,83 +692,14 @@ input[type="submit"]:hover {
     transition: all 0.2s ease-out;
   }
 
-  input[type="submit"]:hover {
-    background: #37383b;
-    color: #fff;
-  }
-
   .name-lower-labels {
     font-size: 14px;
     margin-top: 2px;
   }
-
-  /* cursor type handling */
-  .unclickable-tile .title-heading,
-  .individual-series-container .individual-series-title,
-  .individual-comics-container .individual-comics-title {
-    cursor: default;
-  }
-
-  /* Scrollbar------------------------ */
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background-color: #f1f1f1;
-  }
-
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #888;
-  }
-
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  }
 }
 
 @media only screen and (min-width: 1050px) {
-  /* general */
-  * {
-    font-family: "brandon grotesque";
-    margin: 0;
-    padding: 0;
-    color: #555353;
-  }
-
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-
   /* navbar */
-  .navbar-container {
-    background: rgb(255, 255, 255);
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0;
-  }
-
-  .default-nav ul,
-  .social-nav ul {
-    display: flex;
-  }
-
-  .default-nav-links {
-    font-size: 19px;
-    margin-right: 22px;
-    text-decoration: none;
-  }
-
-  .social-nav-links {
-    margin-left: 22px;
-  }
-
   .social-nav li img {
     max-width: 20px;
   }
@@ -1040,28 +713,7 @@ input[type="submit"]:hover {
     max-width: 205px;
   }
 
-  .active {
-    font-family: "brandon grotesque black";
-  }
-
-  .hamburger-menu-img {
-    display: none;
-  }
-
-  .banner-img {
-    display: block;
-    line-height: 0;
-    max-width: 100%;
-  }
-
   /* work content */
-  .reel,
-  .compositions,
-  .series,
-  .comics {
-    font-family: "brandon grotesque black";
-  }
-
   .work-container {
     padding: 0 240px;
     margin-bottom: 0px;
@@ -1081,14 +733,6 @@ input[type="submit"]:hover {
   .decorations {
     text-decoration: none;
   }
- 
-  .work-tabs div {
-    margin-right: 22px;
-  }
-
-  .work-tabs.work_tabs_no-padding {
-    padding-bottom: 15px;
-  }
 
   /* series and comics heading */
   .individual-series-title,
@@ -1105,54 +749,7 @@ input[type="submit"]:hover {
     font-size: 22px;
   }
 
-  .episodes-heading, .extras-heading, .vignettes-heading {
-    font-family: "brandon grotesque black";
-    text-align: right;
-    font-size: 27px;
-    padding: 30px 0px;
-  }
-
-  .series-process {
-    margin-bottom: 15px;
-  }
-
-  /* masonry */
-  .column-children {
-    margin-bottom: 22px;
-    border: solid;
-    border-width: thin;
-  }
-
-  .extras-img-wrapper img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
   /* gallery */
-  .layout-gallery {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 22px;
-  }
-
-  .gallery-tile-img {
-    width: 100%;
-  }
-
-  .gallery-tile {
-    position: relative;
-    line-height: 0;
-  }
-
-  .tile-overlay-container {
-    position: absolute;
-    transition: all 0.25s ease-out;
-    background: #fff;
-    border: solid;
-    border-width: 0;
-  }
-
   .title-heading {
     font-family: "brandon grotesque black";
     font-size: 27px;
@@ -1174,98 +771,13 @@ input[type="submit"]:hover {
     transform: translate(-50%, -50%);
   }
 
-  .overlay-from-bottom {
-    width: 100%;
-    height: 0%;
-    bottom: 0;
-    left: 0;
-  }
-
-  .gallery-tile:hover .tile-overlay-container {
-    border-width: thin;
-  }
-
-  .gallery-tile:hover .title-heading {
-    opacity: 1;
-  }
-
   .gallery-tile:hover .click-to-see {
     opacity: 1;
-  }
-
-  .gallery-tile:hover .overlay-from-bottom {
-    height: 100%;
-  }
-
-  .clickable-tile,
-  .clickable-tile .tile-overlay-container {
-    cursor: pointer;
   }
 
   .episode-video-container {
     text-align: left;
     margin-bottom: 30px;
-  }
-
-  .clickable-title {
-    cursor: pointer;
-    display: inline-block;
-  }
-
-  .bordered-tiles {
-    border: solid;
-    border-width: thin;
-  }
-
-  /* episode-video */
-  .episode-video {
-    position: relative;
-    padding-bottom: 56.25%;
-    line-height: 0;
-    border: solid;
-    border-width: thin;
-  }
-
-  .episode-video-frame {
-    position: absolute;
-    width: 100%;
-  }
-
-  .playing-info {
-    font-size: 19px;
-    display: flex;
-    align-items: center;
-    padding: 15px 0 0 0;
-  }
-
-  .button {
-    width: 20px;
-    height: 20px;
-    margin-right: 8px;
-
-  }
-
-  .playing-info img {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .playing-info-message {
-    font-family: "brandon grotesque black";
-  }
-
-  .episode-video-title {
-    margin-left: 10px;
-    font-size: 19px;
-  }
-
-  .play-button {
-    display: flex;
-    justify-content: center;
-  }
-
-  .play-button img {
-    width: 80%;
   }
 
   /* footer */
@@ -1276,44 +788,12 @@ input[type="submit"]:hover {
   }
 
   /* About Page ---------------- */
-
   .about-container {
     padding: 0 128px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 42px;
     margin: 40px 0px 100px 0px;
-  }
-
-  .about-img {
-    line-height: 0;
-  }
-
-  .about-img img {
-    width: 100%;
-    border: solid;
-    border-width: thin;
-  }
-
-  .its-me-heading {
-    font-family: "brandon grotesque black";
-    color: #fff;
-    text-align: center;
-    font-size: 75px;
-    background: #37383b;
-    /* border: solid;
-    border-width: thick; */
-  }
-
-  .about-content {
-    border: solid;
-    border-width: thin;
-    font-size: 27px;
-    background: #f4f4f4;
-  }
-
-  .about-content p {
-    padding: 60px;
   }
 
   /* Contact Page ---------------- */
@@ -1328,13 +808,6 @@ input[type="submit"]:hover {
     text-align: center;
   }
 
-  .client-message {
-    display: block;
-    margin: 0 0 18px 0;
-    font-size: 24px;
-    text-align: center;
-  }
-
   .email-address {
     font-family: "brandon grotesque black";
     font-size: 51px;
@@ -1342,99 +815,5 @@ input[type="submit"]:hover {
     padding: 30px 0 30px 0;
     background-color: #37383B;    
     color: #fff;
-  }
-
-  .humour-message {
-    text-align: center;
-    font-size: 14px;
-    margin-top: 18px;
-  }
-  
-  label {
-    display: block;
-    margin: 0 0 18px 0;
-    font-size: 24px;
-  }
-
-  .name-label {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-  }
-
-  input[type="text"],
-  textarea {
-    width: 100%;
-    font-size: 20px;
-    padding: 8px 15px;
-    margin-top: 8px;
-    border: solid;
-    border-width: thin;
-    background: #f4f4f4;
-    resize: none;
-  }
-
-  .message-box {
-    height: 160px;
-  }
-
-  .info-source-box {
-    height: 120px;
-  }
-
-  /* 
-  .first-name-box,
-  .last-name-box {
-    width: 100%;
-  } */
-
-  input[type="submit"] {
-    font-size: 20px;
-    padding: 8px 30px;
-    margin: 10px 0 0 0;
-    text-align: center;
-    border: solid;
-    border-width: thin;
-    cursor: pointer;
-    background: #fff;
-    /* font-family: "brandon grotesque black"; */
-    transition: all 0.2s ease-out;
-  }
-
-  input[type="submit"]:hover {
-    background: #37383b;
-    color: #fff;
-  }
-
-  .name-lower-labels {
-    font-size: 14px;
-    margin-top: 2px;
-  }
-
-  /* cursor type handling */
-  .unclickable-tile .title-heading,
-  .individual-series-container .individual-series-title,
-  .individual-comics-container .individual-comics-title {
-    cursor: default;
-  }
-
-  /* Scrollbar------------------------ */
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background-color: #f1f1f1;
-  }
-
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #888;
-  }
-
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555;
   }
 }
