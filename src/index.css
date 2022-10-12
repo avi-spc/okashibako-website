@@ -57,20 +57,17 @@ ul {
   max-width: 52px;
   margin-left: auto;
   margin-right: 15px;
+  cursor: pointer;
 }
 
 .mobile-nav {
-  position: absolute;
+  position: fixed;
   padding: 40px;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   background-color: #555353;
   z-index: 2;
-  cursor: pointer;
 }
 
 .mobile-nav-links {
@@ -86,6 +83,7 @@ ul {
   max-width: 52px;
   margin-bottom: 25px;
   padding: 0;
+  cursor: pointer;
 }
 
 .mobile-social-nav ul {
@@ -145,8 +143,6 @@ ul {
 }
 
 .episodes-heading, .extras-heading, .vignettes-heading {
-  font-family: "brandon grotesque black";
-  text-align: right;
   font-size: 20px;
   padding: 15px 0px;
 }
@@ -255,8 +251,6 @@ ul {
 
 .playing-info {
   font-size: 15px;
-  display: flex;
-  align-items: center;
   padding: 10px 0px 20px 0px;
 }
 
@@ -340,8 +334,6 @@ ul {
   text-align: center;
   font-size: 30px;
   background: #37383b;
-  /* border: solid;
-    border-width: thick; */
 }
 
 .about-content {
@@ -424,13 +416,12 @@ textarea {
 input[type="submit"] {
   font-size: 15px;
   padding: 6px 15px;
-  margin: 10px 0 0 0;
+  margin-top: 10px;
   text-align: center;
   border: solid;
   border-width: thin;
   cursor: pointer;
   background: #fff;
-  /* font-family: "brandon grotesque black"; */
   transition: all 0.2s ease-out;
 }
 
@@ -474,21 +465,12 @@ input[type="submit"]:hover {
 @media only screen and (min-width: 800px) {
   /* navbar */
   .navbar-container {
-    background: rgb(255, 255, 255);
-
-    display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 20px 0;
   }
 
   .default-nav ul,
   .social-nav ul {
     display: flex;
-  }
-
-  .social-nav li img {
-    max-width: 20px;
   }
 
   .brand-logo {
@@ -510,17 +492,13 @@ input[type="submit"]:hover {
   /* work content */
   .work-container {
     padding: 0 32px;
-    margin-bottom: 0px;
   }
 
   /* series and comics heading */
   .individual-series-title,
   .individual-comics-title,
   .episode-series-title {
-    font-family: "brandon grotesque black";
     font-size: 51px;
-    text-align: center;
-    padding-bottom: 20px;
   }
 
   /* series and comics project layout */
@@ -541,20 +519,12 @@ input[type="submit"]:hover {
 
   /* gallery */
   .layout-gallery {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 22px;
   }
 
   .title-heading {
-    font-family: "brandon grotesque black";
-    font-size: 27px;
-    position: relative;
-    text-align: center;
-    opacity: 0;
     top: 45%;
     left: 50%;
-    transform: translate(-50%, -50%);
   }
 
   .tile-title {
@@ -580,12 +550,9 @@ input[type="submit"]:hover {
   .button {
     width: 20px;
     height: 20px;
-    margin-right: 8px;
-
   }
   
   .episode-video-title {
-    margin-left: 10px;
     font-size: 19px;
   }
 
@@ -595,10 +562,6 @@ input[type="submit"]:hover {
     padding: 50px 240px;
   }
   
-  .footer-container .social-nav ul {
-    justify-content: center;
-  }
-
   .footer-container .social-nav-links {
     margin: 0 20px;
   }
@@ -613,20 +576,11 @@ input[type="submit"]:hover {
   }
 
   .its-me-heading {
-    font-family: "brandon grotesque black";
-    color: #fff;
-    text-align: center;
     font-size: 75px;
-    background: #37383b;
-    /* border: solid;
-    border-width: thick; */
   }
 
   .about-content {
-    border: solid;
-    border-width: thin;
     font-size: 27px;
-    background: #f4f4f4;
   }
 
   .about-content p {
@@ -642,68 +596,39 @@ input[type="submit"]:hover {
   .lets-get-creative-heading {
     font-size: 60px;
     padding: 45px 0 65px 0;
-    text-align: center;
   }
 
   .client-message {
-    display: block;
-    margin: 0 0 18px 0;
     font-size: 24px;
-    text-align: center;
   }
 
   .email-address {
-    font-family: "brandon grotesque black";
     font-size: 40px;
-    text-align: center;
-    padding: 20px 0px;
-    background-color: #37383B;    
-    color: #fff;
   }
 
   label {
-    display: block;
     margin: 0 0 18px 0;
     font-size: 24px;
   }
 
   input[type="text"],
   textarea {
-    width: 100%;
-    font-size: 20px;
     padding: 8px 15px;
     margin-top: 8px;
-    border: solid;
-    border-width: thin;
-    background: #f4f4f4;
-    resize: none;
   }
 
   input[type="submit"] {
     font-size: 20px;
     padding: 8px 30px;
-    margin: 10px 0 0 0;
-    text-align: center;
-    border: solid;
-    border-width: thin;
-    cursor: pointer;
-    background: #fff;
-    /* font-family: "brandon grotesque black"; */
-    transition: all 0.2s ease-out;
   }
 
   .name-lower-labels {
     font-size: 14px;
-    margin-top: 2px;
   }
 }
 
 @media only screen and (min-width: 1050px) {
   /* navbar */
-  .social-nav li img {
-    max-width: 20px;
-  }
-
   .brand-logo {
     margin: 0 130px;
   }
@@ -716,7 +641,6 @@ input[type="submit"]:hover {
   /* work content */
   .work-container {
     padding: 0 240px;
-    margin-bottom: 0px;
   }
 
   .work-tabs {
@@ -726,8 +650,6 @@ input[type="submit"]:hover {
 
   .work-tabs ul {
     justify-content: left;
-    display: flex;
-    cursor: pointer;
   }
 
   .decorations {
@@ -738,10 +660,7 @@ input[type="submit"]:hover {
   .individual-series-title,
   .individual-comics-title,
   .episode-series-title {
-    font-family: "brandon grotesque black";
-    font-size: 51px;
     text-align: left;
-    padding-bottom: 20px;
   }
 
   /* series and comics project layout */
@@ -751,24 +670,13 @@ input[type="submit"]:hover {
 
   /* gallery */
   .title-heading {
-    font-family: "brandon grotesque black";
-    font-size: 27px;
-    position: relative;
-    text-align: center;
-    opacity: 0;
     top: 46%;
     left: 50%;
-    transform: translate(-50%, -50%);
   }
 
   .click-to-see {
-    font-size: 18px;
-    position: relative;
-    text-align: center;
-    opacity: 0;
     top: 54%;
     left: 50%;
-    transform: translate(-50%, -50%);
   }
 
   .gallery-tile:hover .click-to-see {
@@ -790,8 +698,6 @@ input[type="submit"]:hover {
   /* About Page ---------------- */
   .about-container {
     padding: 0 128px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     gap: 42px;
     margin: 40px 0px 100px 0px;
   }
@@ -799,21 +705,14 @@ input[type="submit"]:hover {
   /* Contact Page ---------------- */
   .contact-container {
     padding: 0 240px;
-    margin-bottom: 75px;
   }
 
   .lets-get-creative-heading {
     font-size: 76px;
-    padding: 45px 0 65px 0;
-    text-align: center;
   }
 
   .email-address {
-    font-family: "brandon grotesque black";
     font-size: 51px;
-    text-align: center;
-    padding: 30px 0 30px 0;
-    background-color: #37383B;    
-    color: #fff;
+    padding: 30px 0;
   }
 }
