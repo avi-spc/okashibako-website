@@ -1,6 +1,11 @@
 @font-face {
-  font-family: "brandon grotesque", "brandon grotesque black";
-  src: url("../public/fonts/Brandon_reg.otf"), url("../public/fonts/Brandon_blk.otf");
+  font-family: "brandon grotesque";
+  src: url("./fonts/Brandon_reg.otf") format("opentype")
+}
+
+@font-face {
+  font-family: "brandon grotesque black";
+  src: url("./fonts/Brandon_blk.otf") format("opentype")
 }
 
 /* general */
