@@ -39,11 +39,14 @@ ul {
 
 .default-nav-links {
   font-size: 19px;
-  margin-right: 22px;
   text-decoration: none;
 }
 
-.social-nav-links {
+li:not(:last-child) .default-nav-links {
+  margin-right: 22px;
+}
+
+li:not(:first-child) .social-nav-links {
   margin-left: 22px;
 }
 
@@ -127,10 +130,6 @@ ul {
   justify-content: center;
   display: flex;
   cursor: pointer;
-}
-
-.work-tabs div {
-  margin-right: 22px;
 }
 
 .work-tabs.work_tabs_no-padding {
