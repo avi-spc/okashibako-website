@@ -156,8 +156,9 @@ li:not(:first-child) .social-nav-links {
 }
 
 .episodes-heading, .extras-heading, .vignettes-heading {
+  font-family: "brandon grotesque black";
   font-size: 2rem;
-  padding: 15rem 0;
+  padding: 1.5rem 0;
 }
 
 .series-process {
@@ -520,7 +521,6 @@ input[type="submit"]:hover {
   }
 
   .episodes-heading, .extras-heading, .vignettes-heading {
-    font-family: "brandon grotesque black";
     text-align: right;
     font-size: 2.7rem;
     padding: 3rem 0;
