@@ -32,36 +32,36 @@ npm start
 
 #### Home
 
-![Home](./public/img/screenshots/home.png)
+![Home](./public/images/screenshots/home.png)
 
 #### About
 
-![About](./public/img/screenshots/about.png)
+![About](./public/images/screenshots/about.png)
 
 #### Contact
 
-![Contact](./public/img/screenshots/contact.png)
+![Contact](./public/images/screenshots/contact.png)
 
 #### Reel
 
-![Reel](./public/img/screenshots/reel.png)
+![Reel](./public/images/screenshots/reel.png)
 
 #### Compositions
 
-![Compositions](./public/img/screenshots/compositions.png)
+![Compositions](./public/images/screenshots/compositions.png)
 
 #### Series
 
-![Series](./public/img/screenshots/series.png)
+![Series](./public/images/screenshots/series.png)
 
 #### Individual Series
 
-![IndividualSeries](./public/img/screenshots/individual-series.png)
+![IndividualSeries](./public/images/screenshots/individual-series.png)
 
 #### Comics
 
-![Comics](./public/img/screenshots/comics.png)
+![Comics](./public/images/screenshots/comics.png)
 
 #### Individual Comic
 
-![IndividualComic](./public/img/screenshots/individual-comic.png)
+![IndividualComic](./public/images/screenshots/individual-comic.png)
