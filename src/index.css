@@ -27,9 +27,17 @@ ul {
 }
 
 /* navbar */
+.navbar-section {
+  position: absolute;
+  top: 0;
+  left: 2rem;
+  width: 100%;
+  /* transform: translate(-50%, 0%); */
+}
+
 .navbar-container {
   display: flex;
-  justify-content: left;
+  /* justify-content: left; */
   align-items: center;
   padding: 2rem 0;
 }
@@ -56,12 +64,48 @@ li:not(:first-child) .social-nav-links {
   max-width: 2rem;
 }
 
-.brand-logo {
-  margin: 0 1rem;
+.brand-logo-img {
+  height: 8rem;
 }
 
-.brand-logo-img {
-  max-width: 13.5rem;
+.hero-container-banner {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-container-banner video {
+  position: absolute;
+  top: 25%;
+  scale: 6;    
+  opacity: 0.8;
+}
+
+.curtain-margin {
+  margin-top: 14.2rem;
+}
+
+.brand-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  text-align: center;
+  font-family: 'Urbanist', sans-serif;
+  text-transform: uppercase;
+  color: black;
+}
+
+.brand-name-main {
+  font-size: 2rem;
+  letter-spacing: 1.5rem;
+  color: inherit;
+}
+
+.brand-name-traits {
+  font-size: .9rem;
+  letter-spacing: 0.3rem;
+  color: inherit;
 }
 
 .active {
@@ -71,7 +115,7 @@ li:not(:first-child) .social-nav-links {
 .hamburger-menu-img {
   max-width: 5.2rem;
   margin-left: auto;
-  margin-right: 1.5rem;
+  margin-right: 3.8rem;
   cursor: pointer;
 }
 
@@ -476,6 +520,13 @@ input[type="submit"]:hover {
 
 @media only screen and (min-width: 800px) {
   /* navbar */
+  .navbar-section {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+
   .navbar-container {
     justify-content: center;
   }
@@ -486,12 +537,53 @@ input[type="submit"]:hover {
   }
 
   .brand-logo {
-    margin: 0 5rem;
+    margin: 0 15rem;
   }
 
   .brand-logo-img {
-    max-width: 18rem;
+    height: 10rem;
   }
+
+  .hero-container-banner {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .hero-container-banner video {
+    position: absolute;
+    top: -20%;
+    scale: 3;    
+    opacity: 0.8;
+  }
+
+  .curtain-margin {
+    margin-top: 14.2rem;
+  }
+  
+  .brand-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    text-align: center;
+    font-family: 'Urbanist', sans-serif;
+    text-transform: uppercase;
+    color: black;
+  }
+
+  .brand-name-main {
+    font-size: 3.52rem;
+    letter-spacing: 2rem;
+    color: inherit;
+  }
+
+  .brand-name-traits {
+    font-size: 1.2rem;
+    letter-spacing: 0.3rem;
+    color: inherit;
+  }
+
 
   .hamburger-menu-img {
     display: none;
@@ -665,7 +757,7 @@ input[type="submit"]:hover {
 
   .hero-container-banner video {
     position: absolute;
-    bottom: -50%;
+    top: -50%;
     scale: 2.6;    
     opacity: 0.8;
   }
