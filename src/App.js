@@ -22,7 +22,6 @@ function App() {
 			<WorkContextProvider>
 				<SocialContextProvider>
 					<div className="App">
-						<Navbar />
 						<Routes>
 							<Route path="/" element={((<Home />), (<Reel />))} />
 							<Route path="/compositions" element={<Compositions />} />
@@ -33,6 +32,7 @@ function App() {
 							<Route path="/about" element={<About />} />
 							<Route path="/contact" element={<Contact />} />
 						</Routes>
+						<Navbar />
 						<Footer />
 					</div>
 				</SocialContextProvider>

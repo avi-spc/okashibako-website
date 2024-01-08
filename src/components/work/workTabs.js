@@ -20,7 +20,7 @@ const WorkTabs = () => {
 	});
 
 	return (
-		<div className="work-container">
+		<div className="work-container work-tabs-bar">
 			<div className="work-tabs">
 				<ul>
 					<li>

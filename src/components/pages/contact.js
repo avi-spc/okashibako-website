@@ -13,7 +13,7 @@ const Contact = () => {
 	});
 
 	return (
-		<section className="contact-section" ref={contactPage}>
+		<section className="contact-section curtain-margin" ref={contactPage}>
 			<div className="contact-container">
 				<div className="lets-get-creative-heading">let's get creative</div>
 				<div className="client-message">For all enquiries feel free to ping at</div>

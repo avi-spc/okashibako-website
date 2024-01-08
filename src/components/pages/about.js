@@ -13,7 +13,7 @@ const About = () => {
 	});
 
 	return (
-		<section className="about-section" ref={aboutPage}>
+		<section className="about-section curtain-margin" ref={aboutPage}>
 			<div className="about-container">
 				<div className="about-img">
 					<img

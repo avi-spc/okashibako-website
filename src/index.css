@@ -28,8 +28,6 @@ ul {
 
 /* navbar */
 .navbar-container {
-  background: rgb(255, 255, 255);
-
   display: flex;
   justify-content: left;
   align-items: center;
@@ -642,23 +640,78 @@ input[type="submit"]:hover {
 
 @media only screen and (min-width: 1050px) {
   /* navbar */
+  .navbar-section {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+
   .brand-logo {
-    margin: 0 13rem;
+    margin: 0 39rem;
   }
 
   .brand-logo-img {
-    animation-delay: 5s;
-    max-width: 20.5rem;
+    /* animation-delay: 5s;
+    max-width: 20.5rem; */
+    height: 12rem;
+  }
+
+  .hero-container-banner {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .hero-container-banner video {
+    position: absolute;
+    bottom: -50%;
+    scale: 2.6;    
+    opacity: 0.8;
+  }
+
+  .curtain-margin {
+    margin-top: 16.2rem;
+  }
+  
+  .brand-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    text-align: center;
+    font-family: 'Urbanist', sans-serif;
+    text-transform: uppercase;
+    color: black;
+  }
+
+  .brand-name-main {
+    font-size: 5.12rem;
+    letter-spacing: 2rem;
+    color: inherit;
+  }
+
+  .brand-name-traits {
+    font-size: 1.6rem;
+    letter-spacing: 0.3rem;
+    color: inherit;
   }
 
   /* work content */
   .work-container {
-    padding: 0 24rem;
+    padding: 0 12.7rem;
+  }
+
+  .work-tabs-bar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;  
   }
 
   .work-tabs {
     font-size: 1.9rem;
-    padding: 3.2rem 0;    
+    padding: 3.2rem 0;  
   }
 
   .work-tabs ul {

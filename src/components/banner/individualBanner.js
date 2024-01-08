@@ -1,6 +1,6 @@
 const IndividualBanner = ({ bannerUrl }) => {
 	return (
-		<section className="hero-section">
+		<section className="hero-section curtain-margin">
 			<div className="hero-container">
 				<img src={bannerUrl} alt="" className="banner-img" />
 			</div>
