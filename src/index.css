@@ -748,11 +748,12 @@ input[type="submit"]:hover {
   .brand-logo {
     margin: 0 39rem;
   }
-
+  
   .brand-logo-img {
     /* animation-delay: 5s;
     max-width: 20.5rem; */
     height: 12rem;
+    border: thin black;
   }
 
   .hero-container-banner {
