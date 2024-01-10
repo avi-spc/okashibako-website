@@ -17,19 +17,19 @@ const About = () => {
 			<div className="about-container">
 				<div className="about-img">
 					<img
-						src="/images/work/series/oremo adventures/episodes/series intro/series intro.png"
+						src="/images/about.jpg"
 						alt=""
 					/>
 				</div>
 				<div className="about-content">
 					<div className="its-me-heading">It's me</div>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-						non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					Ävdhêsh also known as <strong>"okashibako"</strong> is an exquisite blend of <strong>illustrator, 
+					animator</strong> and <strong>storyteller</strong> with a strong focus on producing impactful experiences 
+					imbued with a relentless pursuit of aesthetic enlightenment. Embracing the metamorphic 
+					potential inherent in storytelling, coupled with the harmonious amalgamation of art and 
+					technology infused with affection, strives to craft creations  that not only linger in the 
+					recesses of people's minds but also take residence in their hearts for perpetuity.
 					</p>
 				</div>
 			</div>

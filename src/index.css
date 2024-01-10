@@ -379,9 +379,11 @@ li:not(:first-child) .social-nav-links {
 }
 
 .about-img img {
+  height: 75vh;
   width: 100%;
   border: solid;
   border-width: thin;
+  object-fit: cover;
 }
 
 .its-me-heading {
@@ -673,9 +675,13 @@ input[type="submit"]:hover {
   .about-container {
     padding: 0 3.2rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 3.2rem;
     margin: 3rem 0 10rem 0;
+  }
+
+  .about-img img {
+    object-position: center 20%;
   }
 
   .its-me-heading {
@@ -858,6 +864,10 @@ input[type="submit"]:hover {
     padding: 0 12.8rem;
     gap: 4.2rem;
     margin: 4rem 0 10rem 0;
+  }
+
+  .about-img img {
+    object-position: center 20%;
   }
 
   /* Contact Page ---------------- */

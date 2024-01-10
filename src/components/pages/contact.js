@@ -17,7 +17,7 @@ const Contact = () => {
 			<div className="contact-container">
 				<div className="lets-get-creative-heading">let's get creative</div>
 				<div className="client-message">For all enquiries feel free to ping at</div>
-				<div className="email-address">creativekonami@gmail.com</div>
+				<div className="email-address">okashibako.studios@gmail.com</div>
 				<div className="humour-message">shhhhhhh... i’m already reading your email</div>
 			</div>
 		</section>
