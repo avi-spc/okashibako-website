@@ -84,49 +84,49 @@ const dataStore = {
 		}
 	],
 	series: [
-		{
-			id: '1',
-			title: 'oremo-adventures',
-			type: 'series',
-			imageUrl: '/images/work/series/oremo adventures/title poster.mp4',
-			bannerUrl: '/images/work/series/oremo adventures/title banner.png',
-			description:
-				'Little blobs of mushiness bound to a profound friendship, well known in the town for making a lot of mischiefs. Oreo and Momo have been dispatched to this planet to spread smiles across faces.',
-			process: [
-				'/images/work/series/oremo adventures/episodes/process/series intro_storyboard.png',
-				'/images/work/series/oremo adventures/episodes/process/a little sweet, a little salty_storyboard.png',
-				'/images/work/series/oremo adventures/episodes/process/space mission_storyboard.png'
-			],
-			seriesEpisodes: [
-				{
-					id: '1',
-					title: 'series intro',
-					bannerImageUrl:
-						'/images/work/series/oremo adventures/episodes/series intro/series intro.png',
-					thumbnailUrl:
-						'https://raw.githubusercontent.com/avi-spc/creativekonami/master/public/images/work/series/oremo%20adventures/episodes/series%20intro/thumbnail.png?token=AFL433VMEK7QH6WYJWT7HH3BR7RL2',
-					hostedVideoUrl: 'https://www.youtube.com/embed/ReSqXRNyrOc'
-				},
-				{
-					id: '2',
-					title: 'a little sweet, a little salty',
-					bannerImageUrl:
-						'/images/work/series/oremo adventures/episodes/a little sweet, a little salty/a little sweet, a little salty.png',
-					thumbnailUrl:
-						'https://raw.githubusercontent.com/avi-spc/creativekonami/master/public/images/work/series/oremo%20adventures/episodes/a%20little%20sweet%2C%20a%20little%20salty/thumbnail.png?token=AFL433SUB7MNSB4YJTDJA3LBRFF7U',
-					hostedVideoUrl: 'https://www.youtube.com/embed/-Z3g6-Y5udA'
-				},
-				{
-					id: '3',
-					title: 'space mission',
-					bannerImageUrl:
-						'/images/work/series/oremo adventures/episodes/space mission/space mission.png',
-					thumbnailUrl:
-						'https://raw.githubusercontent.com/avi-spc/creativekonami/master/public/images/work/series/oremo%20adventures/episodes/space%20mission/thumbnail.png?token=AFL433VKJS3CHYHSLU33QBLBRFF4O',
-					hostedVideoUrl: 'https://www.youtube.com/embed/hF066ze8miw'
-				}
-			]
-		},
+		// {
+		// 	id: '1',
+		// 	title: 'oremo-adventures',
+		// 	type: 'series',
+		// 	imageUrl: '/images/work/series/oremo adventures/title poster.mp4',
+		// 	bannerUrl: '/images/work/series/oremo adventures/title banner.png',
+		// 	description:
+		// 		'Little blobs of mushiness bound to a profound friendship, well known in the town for making a lot of mischiefs. Oreo and Momo have been dispatched to this planet to spread smiles across faces.',
+		// 	process: [
+		// 		'/images/work/series/oremo adventures/episodes/process/series intro_storyboard.png',
+		// 		'/images/work/series/oremo adventures/episodes/process/a little sweet, a little salty_storyboard.png',
+		// 		'/images/work/series/oremo adventures/episodes/process/space mission_storyboard.png'
+		// 	],
+		// 	seriesEpisodes: [
+		// 		{
+		// 			id: '1',
+		// 			title: 'series intro',
+		// 			bannerImageUrl:
+		// 				'/images/work/series/oremo adventures/episodes/series intro/series intro.png',
+		// 			thumbnailUrl:
+		// 				'https://raw.githubusercontent.com/avi-spc/creativekonami/master/public/images/work/series/oremo%20adventures/episodes/series%20intro/thumbnail.png?token=AFL433VMEK7QH6WYJWT7HH3BR7RL2',
+		// 			hostedVideoUrl: 'https://www.youtube.com/embed/ReSqXRNyrOc'
+		// 		},
+		// 		{
+		// 			id: '2',
+		// 			title: 'a little sweet, a little salty',
+		// 			bannerImageUrl:
+		// 				'/images/work/series/oremo adventures/episodes/a little sweet, a little salty/a little sweet, a little salty.png',
+		// 			thumbnailUrl:
+		// 				'https://raw.githubusercontent.com/avi-spc/creativekonami/master/public/images/work/series/oremo%20adventures/episodes/a%20little%20sweet%2C%20a%20little%20salty/thumbnail.png?token=AFL433SUB7MNSB4YJTDJA3LBRFF7U',
+		// 			hostedVideoUrl: 'https://www.youtube.com/embed/-Z3g6-Y5udA'
+		// 		},
+		// 		{
+		// 			id: '3',
+		// 			title: 'space mission',
+		// 			bannerImageUrl:
+		// 				'/images/work/series/oremo adventures/episodes/space mission/space mission.png',
+		// 			thumbnailUrl:
+		// 				'https://raw.githubusercontent.com/avi-spc/creativekonami/master/public/images/work/series/oremo%20adventures/episodes/space%20mission/thumbnail.png?token=AFL433VKJS3CHYHSLU33QBLBRFF4O',
+		// 			hostedVideoUrl: 'https://www.youtube.com/embed/hF066ze8miw'
+		// 		}
+		// 	]
+		// },
 		{
 			id: '2',
 			title: 'fluffycat',
