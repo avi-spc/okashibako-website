@@ -26,6 +26,11 @@ ul {
   padding: 0;
 }
 
+.text-logo-img {
+  margin-top: -10rem;
+  max-width: 100%;
+}
+
 /* navbar */
 .navbar-section {
   position: absolute;

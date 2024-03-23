@@ -7,7 +7,7 @@ const BannerContent = () => {
 					Sorry, your browser doesn't support embedded videos.
 				</video>
 				<div className="brand-name">
-					<div className="brand-name-main">OKASHIBAKO</div>
+					<div className="brand-name-main"><img src="/images/textual_logo.png" className="text-logo-img"></img></div>
 					<div className="brand-name-traits">illustrator ꞏ animator ꞏ storyteller</div>
 				</div>
 			</div>

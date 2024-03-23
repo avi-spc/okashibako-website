@@ -17,11 +17,11 @@ const Navbar = () => {
 			<div className="navbar-container">
 				<DefaultNavLinks />
 				<Link to="/" className="brand-logo">
-					<img src="/images/logo.png" alt="" className="brand-logo-img" />
+					<img src="/images/visual_logo.png" alt="" className="brand-logo-img" />
 				</Link>
 				<SocialNavLinks classType="social-nav" colorMode="dark" />
 				<img
-					src="/images/hamburger-menu.png"
+					src="/images/hamburger_menu.png"
 					className="hamburger-menu-img"
 					alt=""
 					onClick={() => showMobileNavbar()}
