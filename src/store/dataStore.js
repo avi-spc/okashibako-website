@@ -1,7 +1,7 @@
 const dataStore = {
 	reel: {
-		title: 'reel 2021',
-		hostedVideoUrl: 'https://www.youtube.com/embed/ReSqXRNyrOc'
+		title: 'Showreel 2024',
+		hostedVideoUrl: 'https://youtu.be/0pq43_NNfq8'
 	},
 	compositions: [
 		{
