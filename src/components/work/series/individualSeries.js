@@ -30,7 +30,7 @@ const IndividualSeries = () => {
 
 		const work_tabs = document.querySelector('.work-tabs');
 		work_tabs.classList.add('work_tabs_no-padding');
-		
+
 		return () => {
 			work_tabs.classList.remove('work_tabs_no-padding');
 		};
@@ -95,18 +95,29 @@ const IndividualSeries = () => {
 				)}
 
 				{serial.type === 'project' && (
-					<div style={{ lineHeight: '0px' }}>
-						<div id="video-player" className="episodes-heading"></div>
-						<video
-							muted
-							autoplay="autoplay"
-							loop
-							width={'100%'}
-							className="bordered-tiles"
-						>
-							<source src={serial.spotImageUrl} type="video/mp4" />
-							Sorry, your browser doesn't support embedded videos.
-						</video>
+					<div>
+						{serial.imageUrl.includes('.mp4') ? (<div style={{ lineHeight: '0px' }}>
+							<div id="video-player" className="episodes-heading"></div>
+							<video
+								muted
+								autoplay="autoplay"
+								loop
+								width={'100%'}
+								className="bordered-tiles"
+							>
+								<source src={serial.spotImageUrl} type="video/mp4" />
+								Sorry, your browser doesn't support embedded videos.
+							</video>
+						</div>) : (
+							<div style={{ lineHeight: '0px' }}>
+								<div id="video-player" className="episodes-heading"></div>
+								<img
+									src={serial.spotImageUrl}
+									alt=""
+									className="gallery-tile-img bordered-tiles"
+								/>
+							</div>
+						)}
 					</div>
 				)}
 

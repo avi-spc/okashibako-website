@@ -27,6 +27,8 @@ const Compositions = () => {
 	});
 
 	const { compositions } = useContext(WorkContext);
+	const a = Object.values(compositions);
+	console.log(a.reverse());
 
 	return (
 		<div>
@@ -34,7 +36,7 @@ const Compositions = () => {
 			<WorkTabs />
 			<div className="work-container" ref={compositionsPage}>
 				<div className="layout-gallery">
-					{compositions.map((composition) => {
+					{Object.values(compositions).reverse().map((composition) => {
 						return <WorkTile composition={composition} key={composition.id} />;
 					})}
 				</div>

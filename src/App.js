@@ -12,8 +12,10 @@ import Footer from './components/footer/footer';
 import Compositions from './components/work/compositions/compositions';
 import Series from './components/work/series/series';
 import Comics from './components/work/comics/comics';
+import Games from './components/work/games/games';
 import IndividualSeries from './components/work/series/individualSeries';
 import IndividualComics from './components/work/comics/individualComics';
+import IndividualGame from './components/work/games/individualGame';
 import Reel from './components/work/reel/reel';
 
 function App() {
@@ -29,6 +31,8 @@ function App() {
 							<Route path="/series/:seriesTitle" element={<IndividualSeries />} />
 							<Route path="/comics" element={<Comics />} />
 							<Route path="/comics/:comicsTitle" element={<IndividualComics />} />
+							<Route path="/games" element={<Games />} />
+							<Route path="/games/:gameTitle" element={<IndividualGame />} />
 							<Route path="/about" element={<About />} />
 							<Route path="/contact" element={<Contact />} />
 						</Routes>

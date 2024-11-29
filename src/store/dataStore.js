@@ -81,52 +81,64 @@ const dataStore = {
 			type: 'png',
 			title: 'evil boombasa',
 			imageUrl: '/images/work/compositions/evil boombasa.png'
+		},
+		{
+			id: '14',
+			type: 'png',
+			title: 'mukhi x kitty',
+			imageUrl: '/images/work/compositions/mukhi x kitty.png'
+		},
+		{
+			id: '15',
+			type: 'png',
+			title: 'destiny',
+			imageUrl: '/images/work/compositions/destiny.png'
 		}
 	],
 	series: [
-		// {
-		// 	id: '1',
-		// 	title: 'oremo-adventures',
-		// 	type: 'series',
-		// 	imageUrl: '/images/work/series/oremo adventures/title poster.mp4',
-		// 	bannerUrl: '/images/work/series/oremo adventures/title banner.png',
-		// 	description:
-		// 		'Little blobs of mushiness bound to a profound friendship, well known in the town for making a lot of mischiefs. Oreo and Momo have been dispatched to this planet to spread smiles across faces.',
-		// 	process: [
-		// 		'/images/work/series/oremo adventures/episodes/process/series intro_storyboard.png',
-		// 		'/images/work/series/oremo adventures/episodes/process/a little sweet, a little salty_storyboard.png',
-		// 		'/images/work/series/oremo adventures/episodes/process/space mission_storyboard.png'
-		// 	],
-		// 	seriesEpisodes: [
-		// 		{
-		// 			id: '1',
-		// 			title: 'series intro',
-		// 			bannerImageUrl:
-		// 				'/images/work/series/oremo adventures/episodes/series intro/series intro.png',
-		// 			thumbnailUrl:
-		// 				'https://raw.githubusercontent.com/avi-spc/creativekonami/master/public/images/work/series/oremo%20adventures/episodes/series%20intro/thumbnail.png?token=AFL433VMEK7QH6WYJWT7HH3BR7RL2',
-		// 			hostedVideoUrl: 'https://www.youtube.com/embed/ReSqXRNyrOc'
-		// 		},
-		// 		{
-		// 			id: '2',
-		// 			title: 'a little sweet, a little salty',
-		// 			bannerImageUrl:
-		// 				'/images/work/series/oremo adventures/episodes/a little sweet, a little salty/a little sweet, a little salty.png',
-		// 			thumbnailUrl:
-		// 				'https://raw.githubusercontent.com/avi-spc/creativekonami/master/public/images/work/series/oremo%20adventures/episodes/a%20little%20sweet%2C%20a%20little%20salty/thumbnail.png?token=AFL433SUB7MNSB4YJTDJA3LBRFF7U',
-		// 			hostedVideoUrl: 'https://www.youtube.com/embed/-Z3g6-Y5udA'
-		// 		},
-		// 		{
-		// 			id: '3',
-		// 			title: 'space mission',
-		// 			bannerImageUrl:
-		// 				'/images/work/series/oremo adventures/episodes/space mission/space mission.png',
-		// 			thumbnailUrl:
-		// 				'https://raw.githubusercontent.com/avi-spc/creativekonami/master/public/images/work/series/oremo%20adventures/episodes/space%20mission/thumbnail.png?token=AFL433VKJS3CHYHSLU33QBLBRFF4O',
-		// 			hostedVideoUrl: 'https://www.youtube.com/embed/hF066ze8miw'
-		// 		}
-		// 	]
-		// },
+		{
+			id: '1',
+			title: 'oremo-adventures',
+			type: 'series',
+			imageUrl: '/images/work/series/oremo adventures/title poster.mp4',
+			bannerUrl: '/images/work/series/oremo adventures/title banner.png',
+			description:
+				'Little blobs of mushiness bound to a profound friendship, well known in the town for making a lot of mischiefs. Oreo and Momo have been dispatched to this planet to spread smiles across faces.',
+			process: [
+				'/images/work/series/oremo adventures/episodes/process/series intro_storyboard.png',
+				'/images/work/series/oremo adventures/episodes/process/a little sweet, a little salty_storyboard.png',
+				'/images/work/series/oremo adventures/episodes/process/space mission_storyboard.png'
+			],
+			seriesEpisodes: [
+				{
+					id: '1',
+					title: 'series intro',
+					bannerImageUrl:
+						'/images/work/series/oremo adventures/episodes/series intro/series intro.png',
+					thumbnailUrl:
+						'https://raw.githubusercontent.com/avi-spc/creativekonami/master/public/images/work/series/oremo%20adventures/episodes/series%20intro/thumbnail.png?token=AFL433VMEK7QH6WYJWT7HH3BR7RL2',
+					hostedVideoUrl: 'https://www.youtube.com/embed/ReSqXRNyrOc'
+				},
+				{
+					id: '2',
+					title: 'a little sweet, a little salty',
+					bannerImageUrl:
+						'/images/work/series/oremo adventures/episodes/a little sweet, a little salty/a little sweet, a little salty.png',
+					thumbnailUrl:
+						'https://raw.githubusercontent.com/avi-spc/creativekonami/master/public/images/work/series/oremo%20adventures/episodes/a%20little%20sweet%2C%20a%20little%20salty/thumbnail.png?token=AFL433SUB7MNSB4YJTDJA3LBRFF7U',
+					hostedVideoUrl: 'https://www.youtube.com/embed/-Z3g6-Y5udA'
+				},
+				{
+					id: '3',
+					title: 'space mission',
+					bannerImageUrl:
+						'/images/work/series/oremo adventures/episodes/space mission/space mission.png',
+					thumbnailUrl:
+						'https://raw.githubusercontent.com/avi-spc/creativekonami/master/public/images/work/series/oremo%20adventures/episodes/space%20mission/thumbnail.png?token=AFL433VKJS3CHYHSLU33QBLBRFF4O',
+					hostedVideoUrl: 'https://www.youtube.com/embed/hF066ze8miw'
+				}
+			]
+		},
 		{
 			id: '2',
 			title: 'fluffycat',
@@ -327,6 +339,18 @@ const dataStore = {
 			spotImageUrl: "/images/work/series/she's watching/episodes/she's watching.mp4",
 			process: ["/images/work/series/she's watching/episodes/process/storyboard.png"],
 			seriesEpisodes: {}
+		},
+		{
+			id: '6',
+			title: "dusk's-embrace",
+			type: 'project',
+			imageUrl: "/images/work/series/dusk's embrace/title poster.png",
+			bannerUrl: "/images/work/series/dusk's embrace/title banner.png",
+			description:
+				"As the sun dips below the horizon, dusk's embrace wraps the world in a tender twilight, where daydreams and night whispers intertwine. In this fleeting moment, shadows stretch long, and the world pauses, caught between the fading light and the coming night.",
+			spotImageUrl: "/images/work/series/dusk's embrace/episodes/dusk's embrace.png",
+			process: ["/images/work/series/dusk's embrace/episodes/process/pipeline.png"],
+			seriesEpisodes: {}
 		}
 	],
 	comics: [
@@ -390,7 +414,22 @@ const dataStore = {
 				}
 			]
 		}
-	]
+	],
+	games: [
+		{
+			id: '1',
+			title: "avsaka",
+			type: 'project',
+			imageUrl: "/images/work/games/avsaka/title poster.jpeg",
+			bannerUrl: "/images/work/games/avsaka/title banner.jpeg",
+			description:
+				"The game centers on a hero's quest to restore his ravaged home planet, Avsaka, which has been plundered and devastated by his foes. Determined to reclaim what was lost, he embarks on a daring crusade, invading foreign planets, battling formidable enemies, and gathering precious resources. With each victory, he brings back what is needed to rebuild Avsaka to its former glory.",
+			spotImageUrl: "/images/work/games/avsaka/episodes/avsaka.jpeg",
+			process: ["/images/work/games/avsaka/episodes/process/storyboard.png"],
+			seriesEpisodes: {},
+			trailerUrl: "/images/work/games/avsaka/episodes/avsaka.jpeg"
+		},
+	],
 };
 
 export default dataStore;
