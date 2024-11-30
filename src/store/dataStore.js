@@ -112,12 +112,12 @@ const dataStore = {
 			seriesEpisodes: [
 				{
 					id: '1',
-					title: 'series intro',
+					title: 'A Hello',
 					bannerImageUrl:
 						'/images/work/series/oremo adventures/episodes/series intro/series intro.png',
 					thumbnailUrl:
 						'https://raw.githubusercontent.com/avi-spc/creativekonami/master/public/images/work/series/oremo%20adventures/episodes/series%20intro/thumbnail.png?token=AFL433VMEK7QH6WYJWT7HH3BR7RL2',
-					hostedVideoUrl: 'https://www.youtube.com/embed/ReSqXRNyrOc'
+					hostedVideoUrl: 'https://youtu.be/DQ22iEA1clo'
 				},
 				{
 					id: '2',
@@ -126,7 +126,7 @@ const dataStore = {
 						'/images/work/series/oremo adventures/episodes/a little sweet, a little salty/a little sweet, a little salty.png',
 					thumbnailUrl:
 						'https://raw.githubusercontent.com/avi-spc/creativekonami/master/public/images/work/series/oremo%20adventures/episodes/a%20little%20sweet%2C%20a%20little%20salty/thumbnail.png?token=AFL433SUB7MNSB4YJTDJA3LBRFF7U',
-					hostedVideoUrl: 'https://www.youtube.com/embed/-Z3g6-Y5udA'
+					hostedVideoUrl: 'https://youtu.be/4o5rzMj9nac'
 				},
 				{
 					id: '3',
@@ -135,7 +135,7 @@ const dataStore = {
 						'/images/work/series/oremo adventures/episodes/space mission/space mission.png',
 					thumbnailUrl:
 						'https://raw.githubusercontent.com/avi-spc/creativekonami/master/public/images/work/series/oremo%20adventures/episodes/space%20mission/thumbnail.png?token=AFL433VKJS3CHYHSLU33QBLBRFF4O',
-					hostedVideoUrl: 'https://www.youtube.com/embed/hF066ze8miw'
+					hostedVideoUrl: 'https://youtu.be/EqQ2biRbOVo'
 				}
 			]
 		},
