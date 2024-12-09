@@ -48,11 +48,11 @@ const WorkTabs = () => {
 							games
 						</NavLink>
 					</li> */}
-					{/* <li>
-						<NavLink to="/comics" className="default-nav-links">
+					<li>
+						<NavLink to="/graphics" className="default-nav-links">
 							graphics
 						</NavLink>
-					</li> */}
+					</li>
 				</ul>
 			</div>
 		</div>

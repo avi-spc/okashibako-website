@@ -82,7 +82,7 @@ li:not(:first-child) .social-nav-links {
 .hero-container-banner video {
   position: absolute;
   top: 25%;
-  scale: 6;    
+  scale: 6;
   opacity: 0.8;
 }
 
@@ -198,11 +198,14 @@ li:not(:first-child) .social-nav-links {
 }
 
 /* series and comics project layout */
-.series-synopsis, .comics-synopsis {
+.series-synopsis,
+.comics-synopsis {
   font-size: 1.5rem;
 }
 
-.episodes-heading, .extras-heading, .vignettes-heading {
+.episodes-heading,
+.extras-heading,
+.vignettes-heading {
   font-family: "brandon grotesque black";
   font-size: 2rem;
   padding: 1.5rem 0;
@@ -434,7 +437,7 @@ li:not(:first-child) .social-nav-links {
   font-size: 2.5rem;
   text-align: center;
   padding: 2rem 0;
-  background-color: #37383B;    
+  background-color: #37383B;
   color: #fff;
 }
 
@@ -526,6 +529,7 @@ input[type="submit"]:hover {
 }
 
 @media only screen and (min-width: 800px) {
+
   /* navbar */
   .navbar-section {
     position: absolute;
@@ -560,14 +564,14 @@ input[type="submit"]:hover {
   .hero-container-banner video {
     position: absolute;
     top: -20%;
-    scale: 3;    
+    scale: 3;
     opacity: 0.8;
   }
 
   .curtain-margin {
     margin-top: 14.2rem;
   }
-  
+
   .brand-name {
     position: absolute;
     top: 50%;
@@ -613,11 +617,14 @@ input[type="submit"]:hover {
   }
 
   /* series and comics project layout */
-  .series-synopsis, .comics-synopsis {
+  .series-synopsis,
+  .comics-synopsis {
     font-size: 2rem;
   }
 
-  .episodes-heading, .extras-heading, .vignettes-heading {
+  .episodes-heading,
+  .extras-heading,
+  .vignettes-heading {
     text-align: right;
     font-size: 2.7rem;
     padding: 3rem 0;
@@ -661,7 +668,7 @@ input[type="submit"]:hover {
     width: 2rem;
     height: 2rem;
   }
-  
+
   .episode-video-title {
     font-size: 1.9rem;
   }
@@ -671,7 +678,7 @@ input[type="submit"]:hover {
     margin-top: 7.5rem;
     padding: 5rem 24rem;
   }
-  
+
   .footer-container .social-nav-links {
     margin: 0 2rem;
   }
@@ -742,6 +749,7 @@ input[type="submit"]:hover {
 }
 
 @media only screen and (min-width: 1050px) {
+
   /* navbar */
   .navbar-section {
     position: absolute;
@@ -753,7 +761,7 @@ input[type="submit"]:hover {
   .brand-logo {
     margin: 0 39rem;
   }
-  
+
   .brand-logo-img {
     /* animation-delay: 5s;
     max-width: 20.5rem; */
@@ -770,14 +778,14 @@ input[type="submit"]:hover {
   .hero-container-banner video {
     position: absolute;
     top: -50%;
-    scale: 2.6;    
+    scale: 2.6;
     opacity: 0.8;
   }
 
   .curtain-margin {
     margin-top: 16.2rem;
   }
-  
+
   .brand-name {
     position: absolute;
     top: 50%;
@@ -810,12 +818,12 @@ input[type="submit"]:hover {
     position: sticky;
     top: 0;
     z-index: 100;
-    background-color: white;  
+    background-color: white;
   }
 
   .work-tabs {
     font-size: 1.9rem;
-    padding: 3.2rem 0;  
+    padding: 3.2rem 0;
   }
 
   .work-tabs ul {
@@ -834,7 +842,8 @@ input[type="submit"]:hover {
   }
 
   /* series and comics project layout */
-  .series-synopsis, .comics-synopsis {
+  .series-synopsis,
+  .comics-synopsis {
     font-size: 2.2rem;
   }
 
@@ -856,6 +865,26 @@ input[type="submit"]:hover {
   .episode-video-container {
     text-align: left;
     margin-bottom: 3rem;
+  }
+
+  .case-study-urls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+    font-size: 1.2rem;
+  }
+
+  .case-study-urls li {
+    list-style-type: none;
+  }
+
+  .case-study-urls li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight:900;
+    background-color: #000;
+    color: #fff;
+    padding: 1rem 1.5rem;
   }
 
   /* footer */

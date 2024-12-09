@@ -430,6 +430,44 @@ const dataStore = {
 			trailerUrl: "/images/work/games/avsaka/episodes/avsaka.jpeg"
 		},
 	],
+	graphics: [
+		{
+			id: '1',
+			title: "cosmos",
+			type: "interaction",
+			imageUrl: "/images/work/graphics/cosmos/title poster.png",
+			bannerUrl: "/images/work/graphics/cosmos/title banner.png",
+			description:
+				"Cosmos is an innovative social media platform designed specifically for gaming professionals, hobbyists, game developers, and eSports enthusiasts. The app aims to create a dynamic community where users can share content, collaborate on projects, stay updated on industry news, and participate in eSports events.",
+			caseStudyUrl: "https://www.behance.net/gallery/212842185/Cosmos",
+			prototypeUrl: "https://www.figma.com/proto/Zy4DZUe5S4I2foIEQ30apJ/cosmos-(app)?node-id=472-8788&t=mGLgAUAKdeE3ARit-1",
+			process: ["/images/work/graphics/cosmos/process/mockups.png", "/images/work/graphics/cosmos/process/components.png", "/images/work/graphics/cosmos/process/design system.png", "/images/work/graphics/cosmos/process/wireframes.png", "/images/work/graphics/cosmos/process/screens.png"],
+		},
+		{
+			id: '2',
+			title: "omoshiroi",
+			type: "interaction",
+			imageUrl: "/images/work/graphics/omoshiroi/title poster.png",
+			bannerUrl: "/images/work/graphics/omoshiroi/title banner.png",
+			description:
+				"Omoshiroi is a revolutionary anime streaming app designed to deliver a seamless and immersive experience for anime fans worldwide. Combining a vast library of anime content with innovative features, Omoshiroi caters to all types of viewers, from casual fans to dedicated otakus.",
+			caseStudyUrl: "https://www.behance.net/gallery/212870923/Omoshiroi",
+			prototypeUrl: "https://www.figma.com/proto/hVqh8ndRsrYyUrF4QEem2f/omoshiroi-(app)?node-id=298-920&t=Wegw3sfD6vOYdNvc-1",
+			process: ["/images/work/graphics/omoshiroi/process/mockups.png", "/images/work/graphics/omoshiroi/process/components.png", "/images/work/graphics/omoshiroi/process/design system.png", "/images/work/graphics/omoshiroi/process/wireframes.png", "/images/work/graphics/omoshiroi/process/screens.png"],
+		},
+		{
+			id: '3',
+			title: "kamuyaki",
+			type: "branding",
+			imageUrl: "/images/work/graphics/kamuyaki/title poster.png",
+			bannerUrl: "/images/work/graphics/kamuyaki	/title banner.png",
+			description:
+				"Kamuyaki is dedicated to delivering an authentic and memorable Taiyaki experience. Each piece is meticulously crafted using time-honored techniques and the finest ingredients, ensuring that every bite transports you to the bustling streets of Japan, where the aroma of freshly made Taiyaki fills the air.",
+			caseStudyUrl: "https://www.behance.net/gallery/213658753/Kamuyaki",
+			// prototypeUrl: "https://www.figma.com/proto/hVqh8ndRsrYyUrF4QEem2f/omoshiroi-(app)?node-id=298-920&t=Wegw3sfD6vOYdNvc-1",
+			process: ["/images/work/graphics/kamuyaki/process/01.png", "/images/work/graphics/kamuyaki/process/02.png", "/images/work/graphics/kamuyaki/process/03.png", "/images/work/graphics/kamuyaki/process/04.png", "/images/work/graphics/kamuyaki/process/05.png", "/images/work/graphics/kamuyaki/process/06.png", "/images/work/graphics/kamuyaki/process/07.png", "/images/work/graphics/kamuyaki/process/08.png", "/images/work/graphics/kamuyaki/process/09.png"],
+		},
+	],
 };
 
 export default dataStore;
