@@ -8,7 +8,7 @@ const SocialContextProvider = (props) => {
 		{ name: 'youtube', url: 'https://www.youtube.com/channel/UCKjfxwT4o_LEjMELV3EUlLw' },
 		{ name: 'behance', url: 'https://www.behance.net/avdheshyadavv' },
 		{ name: 'giphy', url: 'https://giphy.com/okashibako' },
-		{ name: 'dribbble', url: 'https://dribbble.com/okashibako' },
+		// { name: 'dribbble', url: 'https://dribbble.com/okashibako' },
 		{ name: 'github', url: 'https://github.com/avi-spc' }
 	]);
 
