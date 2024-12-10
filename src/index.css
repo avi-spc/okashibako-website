@@ -31,6 +31,30 @@ ul {
   max-width: 100%;
 }
 
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: #fff;
+}
+
+.loader__circle {
+  width: 2.5rem;
+  height: 2.5rem;
+
+  border-radius: 50%;
+  background-color: #000;
+}
+
 /* navbar */
 .navbar-section {
   position: absolute;
@@ -744,7 +768,7 @@ input[type="submit"]:hover {
     font-size: 1.8rem;
     /* font-weight: 900; */
   }
-  
+
   .speciality-heading,
   .tools-heading {
     margin-bottom: 1rem;
@@ -752,18 +776,18 @@ input[type="submit"]:hover {
     font-size: 1.5rem;
     text-transform: uppercase;
   }
-  
+
   .tools {
     display: flex;
     flex-wrap: wrap;
     gap: .2rem;
   }
-  
+
   .tools li {
     padding: .3rem .8rem;
     background-color: #37383b;
     color: #fff;
-  }  
+  }
 
   /* Contact Page ---------------- */
   .contact-container {

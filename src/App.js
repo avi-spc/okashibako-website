@@ -19,6 +19,7 @@ import IndividualComics from './components/work/comics/individualComics';
 import IndividualGame from './components/work/games/individualGame';
 import IndividualGraphics from './components/work/graphics/individualGraphics';
 import Reel from './components/work/reel/reel';
+import Loader from './components/work/loader';
 
 function App() {
 	return (
@@ -26,6 +27,7 @@ function App() {
 			<WorkContextProvider>
 				<SocialContextProvider>
 					<div className="App">
+						<Loader />
 						<Routes>
 							<Route path="/" element={((<Home />), (<Reel />))} />
 							<Route path="/compositions" element={<Compositions />} />
