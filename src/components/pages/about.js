@@ -22,14 +22,43 @@ const About = () => {
 					/>
 				</div>
 				<div className="about-content">
-					<div className="its-me-heading">It's me</div>
+					<div className="its-me-heading">it's me</div>
 					<p>
-					Ävdhêsh also known as <strong>"okashibako"</strong> is an exquisite blend of <strong>illustrator, 
-					animator</strong> and <strong>storyteller</strong> with a strong focus on producing impactful experiences 
-					imbued with a relentless pursuit of aesthetic enlightenment. Embracing the metamorphic 
-					potential inherent in storytelling, coupled with the harmonious amalgamation of art and 
-					technology infused with affection, strives to craft creations  that not only linger in the 
-					recesses of people's minds but also take residence in their hearts for perpetuity.
+						Ävdhêsh also known as <strong>"okashibako"</strong> is an exquisite blend of <strong>ux designer,
+							animator</strong> and <strong>storyteller</strong> dedicated to creating deeply impactful
+						experiences driven by an unwavering quest for aesthetic brilliance. Harnessing the transformative
+						power of storytelling and seamlessly blending art with technology infused with heartfelt passion,
+						Ävdhêsh aspires to craft works that not only resonate in the depths of people’s minds but also find
+						a permanent place in their hearts.
+
+						<div className="speciality-tools">
+							<div className='speciality-section'>
+								<div className="speciality-heading">
+									Safe hands with
+								</div>
+								<ul className="specialities">
+									<li>UX Design</li>
+									<li>Motion Design</li>
+									<li>Game Development</li>
+								</ul>
+							</div>
+							<div className='tools-section'>
+								<div className="tools-heading">
+									Tools
+								</div>
+								<ul className="tools">
+									<li>Figma</li>
+									<li>Cinema4D</li>
+									<li>Adobe Illustrator</li>
+									<li>Adobe AfterEffects</li>
+									<li>Adobe Animate</li>
+									<li>Autodesk Maya</li>
+									<li>Procreate</li>
+									<li>Redshift</li>
+									<li>Unity</li>
+								</ul>
+							</div>
+						</div>
 					</p>
 				</div>
 			</div>

@@ -29,6 +29,11 @@ const WorkTabs = () => {
 						</NavLink>
 					</li>
 					<li>
+						<NavLink to="/graphics" className="default-nav-links">
+							graphics
+						</NavLink>
+					</li>
+					<li>
 						<NavLink to="/compositions" className="default-nav-links">
 							compositions
 						</NavLink>
@@ -48,11 +53,6 @@ const WorkTabs = () => {
 							games
 						</NavLink>
 					</li> */}
-					<li>
-						<NavLink to="/graphics" className="default-nav-links">
-							graphics
-						</NavLink>
-					</li>
 				</ul>
 			</div>
 		</div>

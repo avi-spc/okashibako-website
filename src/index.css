@@ -701,11 +701,11 @@ input[type="submit"]:hover {
   }
 
   .about-content {
-    font-size: 2.7rem;
+    font-size: 2.2rem;
   }
 
   .about-content p {
-    padding: 6rem;
+    padding: 4rem;
   }
 
   /* Contact Page ---------------- */
@@ -881,7 +881,7 @@ input[type="submit"]:hover {
   .case-study-urls li a {
     text-decoration: none;
     text-transform: uppercase;
-    font-weight:900;
+    font-weight: 900;
     background-color: #000;
     color: #fff;
     padding: 1rem 1.5rem;
@@ -896,9 +896,38 @@ input[type="submit"]:hover {
 
   /* About Page ---------------- */
   .about-container {
-    padding: 0 12.8rem;
-    gap: 4.2rem;
+    padding: 0 10.8rem;
+    grid-template-columns: 35% 1fr;
+    gap: 2rem;
     margin: 4rem 0 10rem 0;
+  }
+
+  .speciality-tools {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    margin-top: 2.5rem;
+    font-size: 1.8rem;
+    /* font-weight: 900; */
+  }
+
+  .speciality-heading,
+  .tools-heading {
+    margin-bottom: 1rem;
+    font-weight: 900;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+
+  .tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .2rem;
+  }
+
+  .tools li {
+    padding: .3rem .8rem;
+    background-color: #000;
+    color: #fff;
   }
 
   .about-img img {
