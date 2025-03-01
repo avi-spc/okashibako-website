@@ -35,8 +35,8 @@ function App() {
 							<Route path="/series/:seriesTitle" element={<IndividualSeries />} />
 							<Route path="/comics" element={<Comics />} />
 							<Route path="/comics/:comicsTitle" element={<IndividualComics />} />
-							{/* <Route path="/games" element={<Games />} />
-							<Route path="/games/:gameTitle" element={<IndividualGame />} /> */}
+							<Route path="/games" element={<Games />} />
+							<Route path="/games/:gameTitle" element={<IndividualGame />} />
 							<Route path="/graphics" element={<Graphics />} />
 							<Route path="/graphics/:graphicsTitle" element={<IndividualGraphics />} />
 							<Route path="/about" element={<About />} />

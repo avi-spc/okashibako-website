@@ -1,78 +1,89 @@
-import { useEffect, useRef, useContext } from 'react';
-import { useParams } from 'react-router-dom';
-import { gsap } from 'gsap';
+import { useEffect, useRef, useContext } from "react";
+import { useParams } from "react-router-dom";
+import { gsap } from "gsap";
 
-import { WorkContext } from '../../../contexts/workContext';
+import { WorkContext } from "../../../contexts/workContext";
 
-import IndividualBanner from '../../banner/individualBanner';
-import WorkTabs from '../workTabs';
-import IndividualGameTrailer from './individualGameTrailer';
+import IndividualBanner from "../../banner/individualBanner";
+import WorkTabs from "../workTabs";
+import IndividualGameTrailer from "./individualGameTrailer";
 
 const IndividualGame = () => {
-	const individualGamePage = useRef();
+    const individualGamePage = useRef();
 
-	useEffect(() => {
-		window.scrollTo(0, 0);
+    useEffect(() => {
+        window.scrollTo(0, 0);
 
-		gsap.from(individualGamePage.current, {
-			y: '5%',
-			duration: 0.5,
-			ease: 'Power2.easeOut'
-		});
+        gsap.from(individualGamePage.current, {
+            y: "5%",
+            duration: 0.5,
+            ease: "Power2.easeOut",
+        });
 
-		gsap.to(individualGamePage.current, {
-			opacity: '100%',
-			duration: 0.5,
-			ease: 'Power2.easeOut'
-		});
+        gsap.to(individualGamePage.current, {
+            opacity: "100%",
+            duration: 0.5,
+            ease: "Power2.easeOut",
+        });
 
-		const work_tabs = document.querySelector('.work-tabs');
-		work_tabs.classList.add('work_tabs_no-padding');
+        const work_tabs = document.querySelector(".work-tabs");
+        work_tabs.classList.add("work_tabs_no-padding");
 
-		return () => {
-			work_tabs.classList.remove('work_tabs_no-padding');
-		};
-	}, []);
+        return () => {
+            work_tabs.classList.remove("work_tabs_no-padding");
+        };
+    }, []);
 
-	const { gameTitle } = useParams();
-	const { games } = useContext(WorkContext);
+    const { gameTitle } = useParams();
+    const { games } = useContext(WorkContext);
 
-	const game = games.find((game) => game.title === gameTitle);
+    const game = games.find((game) => game.title === gameTitle);
 
-	return (
-		<div>
-			<IndividualBanner bannerUrl={game.bannerUrl} />
-			<WorkTabs />
-			<div className="work-container" ref={individualGamePage}>
-				<div className="individual-series-title">{game.title.replace(/-/g, ' ')}</div>
-				<div className="series-synopsis">{game.description}</div>
+    return (
+        <div>
+            <IndividualBanner bannerUrl={game.bannerUrl} />
+            <WorkTabs />
+            <div className="work-container" ref={individualGamePage}>
+                <div className="individual-series-title">
+                    {game.title.replace(/-/g, " ")}
+                </div>
+                <div className="series-synopsis">{game.description}</div>
 
-				<div id="video-player" className="episodes-heading">
-					{
-						game.trailerUrl.includes('.') ? 'banner' : 'trailer'
-					}
-				</div>
+                <div className="case-study-urls">
+                {game.prototypeUrl !== "" && (<li key={gameTitle}>
+						<a href={game.prototypeUrl} target="_blank">
+							Download
+						</a>
+					</li>)}
+					<li key={gameTitle}>
+                        <a href={game.codebaseUrl} target="_blank">
+                            Codebase
+                        </a>
+                    </li>
+                </div>
 
-				<IndividualGameTrailer gameTitle={gameTitle} gameTrailerUrl={game.trailerUrl} />
+                {/* <div id="video-player" className="episodes-heading">
+                    gameplay
+                </div> */}
 
-				{game.process != null && (
-					<div>
-						<div className="extras-heading">process</div>
-						{game.process.map((process) => {
-							return (
-								<img
-									src={process}
-									alt=""
-									width="100%"
-									className="series-process bordered-tiles"
-								/>
-							);
-						})}
-					</div>
-				)}
-			</div>
-		</div>
-	);
+                {game.process != null && (
+                    <div>
+                        <div className="extras-heading">visuals</div>
+                        {game.process.map((process) => {
+                            return (
+                                <img
+                                    src={process}
+                                    alt=""
+                                    width="100%"
+                                    className="series-process bordered-tiles"
+                                />
+                            );
+                        })}
+                    </div>
+                )}
+            </div>
+        </div>
+    );
 };
 
 export default IndividualGame;
